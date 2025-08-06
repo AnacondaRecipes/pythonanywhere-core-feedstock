@@ -37,10 +37,12 @@ test:
   requires:
     - pip
     - pytest
+    - pytest-mock
+    - responses
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-    - pytest -n auto --color=yes --tb=short gh_src/tests -v
+    - pytest gh_src/tests -vv --color=yes
   imports:
     - pythonanywhere_core
     - pythonanywhere_core.base

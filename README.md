@@ -1,7 +1,7 @@
 About pythonanywhere-core-feedstock
 =======================
 
-Feedstock license: [MIT](LICENSE)
+Feedstock license: [BSD-3-Clause](LICENSE)
 
 Home: https://github.com/pythonanywhere/pythonanywhere-core
 
