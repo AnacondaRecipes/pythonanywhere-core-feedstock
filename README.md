@@ -1,13 +1,13 @@
-About <pkg_name>-feedstock
+About pythonanywhere-core-feedstock
 =======================
 
-Feedstock license: [BSD-3-Clause](LICENSE)
+Feedstock license: [MIT](LICENSE)
 
-Home: <home_url>
+Home: https://github.com/pythonanywhere/pythonanywhere-core
 
-Package license: <pkg_license>
+Package license: MIT
 
-Summary: <pkg_summary>
+Summary: API wrapper for programmatic management of PythonAnywhere services
 
 
 Current release info
@@ -15,19 +15,19 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-<pkg_name>-green.svg)](https://anaconda.org/anaconda/<pkg_name>) | [![Conda Downloads](https://img.shields.io/conda/dn/anaconda/<pkg_name>.svg)](https://anaconda.org/anaconda/<pkg_name>) | [![Conda Version](https://img.shields.io/conda/vn/anaconda/<pkg_name>.svg)](https://anaconda.org/anaconda/<pkg_name>) | [![Conda Platforms](https://img.shields.io/conda/pn/anaconda/<pkg_name>.svg)](https://anaconda.org/anaconda/<pkg_name>) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pythonanywhere-core-green.svg)](https://anaconda.org/anaconda/pythonanywhere-core) | [![Conda Downloads](https://img.shields.io/conda/dn/anaconda/pythonanywhere-core.svg)](https://anaconda.org/anaconda/pythonanywhere-core) | [![Conda Version](https://img.shields.io/conda/vn/anaconda/pythonanywhere-core.svg)](https://anaconda.org/anaconda/pythonanywhere-core) | [![Conda Platforms](https://img.shields.io/conda/pn/anaconda/pythonanywhere-core.svg)](https://anaconda.org/anaconda/pythonanywhere-core) |
 
-Installing <pkg_name>
+Installing pythonanywhere-core
 ==================
 
-Installing `<pkg_name>` from the main channel can be achieved by:
+Installing `pythonanywhere-core` from the main channel can be achieved by:
 
 ```
-conda install <pkg_name>
+conda install pythonanywhere-core
 ```
 
-It is possible to list all of the versions of `<pkg_name>` available on your platform with `conda`:
+It is possible to list all of the versions of `pythonanywhere-core` available on your platform with `conda`:
 
 ```
-conda search <pkg_name>
+conda search pythonanywhere-core
 ```

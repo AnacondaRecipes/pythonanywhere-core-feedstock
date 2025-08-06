@@ -1,45 +1,63 @@
-{% set name = "<PLEASE ADD PKG NAME>" %}
-{% set version = "<PLEASE ADD PKG VERSION>" %}
+{% set name = "pythonanywhere-core" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: <sha256>
+  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pythonanywhere_core-{{ version }}.tar.gz
+    sha256: 2b43d726c18e5972a01bdfe09482c72dad20325fc3196c7504f4d90acaf642c0
+
+  # tests and tests data files
+  - url: https://github.com/pythonanywhere/pythonanywhere-core/archive/refs/tags/v{{ version }}.tar.gz
+    sha256: b338361925ed92ef4e3ff33b29fa4c05f003a7fa470b0157a2e427e626bb4202
+    folder: gh_src
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  skip: True  # [py<38]
+  skip: True  # [py<310]
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vv
 
 requirements:
   host:
     - python
+    - poetry-core
     - pip
   run:
     - python
+    - python-dateutil >=2.8.2
+    - requests >=2.30.0
+    - snakesay >=0.10.3
+    - typing_extensions >=4.5.0
 
 test:
-  imports:
-    - {{ name.replace('-', '.') }}
+  source_files:
+    - gh_src/tests
   requires:
     - pip
+    - pytest
   commands:
     - pip check
+    - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
+    - pytest -n auto --color=yes --tb=short gh_src/tests -v
+  imports:
+    - pythonanywhere_core
+    - pythonanywhere_core.base
+    - pythonanywhere_core.exceptions
+    - pythonanywhere_core.files
+    - pythonanywhere_core.schedule
+    - pythonanywhere_core.students
+    - pythonanywhere_core.webapp
+    - pythonanywhere_core.website
 
 about:
-  home: <PLEASE ADD HOME URL>
-  summary: <PLEASE ADD SUMMARY>
-  description: |
-    <PLEASE ADD DESCRIPTION>
-  license: <PLEASE ADD LICENSE>
-  license_family: <PLEASE ADD LICENSE_FAMILY>
-  license_file: <PLEASE_ADD_LICENSE_FILE>
-  dev_url: <PLEASE ADD DEV URL>
-  doc_url: <PLEASE ADD DOC URL>
+  home: https://github.com/pythonanywhere/pythonanywhere-core
+  dev_url: https://github.com/pythonanywhere/pythonanywhere-core/tree/v0.2.5
+  doc_url: https://github.com/pythonanywhere/pythonanywhere-core/blob/master/README.rst
+  license: MIT
+  license_file: LICENSE
+  license_family: MIT
+  summary: API wrapper for programmatic management of PythonAnywhere services
+  description: It's an extraction and improvement of core code behind PythonAnywhere cli tool
 
-extra:
-  recipe-maintainers:
-    - Jrice1317
