@@ -42,7 +42,9 @@ test:
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-    - pytest gh_src/tests -vv --color=yes
+    - pytest gh_src/tests -vv --color=yes [not win]
+      # Skip test with error on path Windows Path/os.path
+    - pytest gh_src/tests -vv --color=yes --deselect=test_ls_bad_path [win]
   imports:
     - pythonanywhere_core
     - pythonanywhere_core.base
