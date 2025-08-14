@@ -1,5 +1,5 @@
 {% set name = "pythonanywhere-core" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +7,16 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pythonanywhere_core-{{ version }}.tar.gz
-    sha256: 2b43d726c18e5972a01bdfe09482c72dad20325fc3196c7504f4d90acaf642c0
+    sha256: 40fcef8efc31ccc5478a41305ce96abec2eabe532d549bc04787328d46519a3a
 
   # tests and tests data files
   - url: https://github.com/{{ name.split('-')[0] }}/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: b338361925ed92ef4e3ff33b29fa4c05f003a7fa470b0157a2e427e626bb4202
+    sha256: ff0ccf5c350eea9c04147b307634749286e9f0f86a2d01ee879a14473fd47c89
     folder: gh_src
 
 build:
   number: 0
-  skip: True  # [py<310]
+  skip: True  # [py<38]
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vv
 
 requirements:
@@ -38,7 +38,7 @@ test:
     - pip
     - pytest >=8.0.0,<9
     - pytest-mock >=3.10.0,<4.0
-    - responses >=0.25.0,<0.26
+    - responses >=0.25.0,<1.0
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
