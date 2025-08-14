@@ -1,0 +1,1635 @@
+2025-08-14T14:33:53.797846+00:00  | INFO     |   Submitted for execution: PID: 8080
+2025-08-14T14:33:57.442556+00:00  | INFO     |   Downloading flow from GitHub storage - repo: 'anaconda-distribution/prefect-cookbook', path: 'cookbook/flows/feedstock_build_flow.py', ref: 'main'
+2025-08-14T14:33:58.75803+00:00   | INFO     |   Flow successfully downloaded. Using commit: a9039485f36bf3c654551902098dd64b714bc2e8
+2025-08-14T14:33:59.143183+00:00  | INFO     |   Beginning Flow run for 'Generic Feedstock Build'
+2025-08-14T14:33:59.620371+00:00  | INFO     |   Task 'feedstock_name': Starting task run...
+2025-08-14T14:33:59.804467+00:00  | INFO     |   Task 'feedstock_name': Finished task run for task with final state: 'Success'
+2025-08-14T14:33:59.904861+00:00  | INFO     |   Task 'update_status': Starting task run...
+2025-08-14T14:34:00.067574+00:00  | INFO     |   Task 'update_status': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:00.281728+00:00  | INFO     |   Task 'dispatch_id': Starting task run...
+2025-08-14T14:34:00.705099+00:00  | INFO     |   Task 'dispatch_id': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:00.804859+00:00  | INFO     |   Task 'flowrun_directory': Starting task run...
+2025-08-14T14:34:00.895436+00:00  | INFO     |   Created flowrun directory 'C:\b\abs_a2lrw7uhfo'
+2025-08-14T14:34:00.981818+00:00  | INFO     |   Task 'flowrun_directory': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:01.08222+00:00   | INFO     |   Task 'ignore_skip_existing': Starting task run...
+2025-08-14T14:34:01.236424+00:00  | INFO     |   Task 'ignore_skip_existing': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:01.336343+00:00  | INFO     |   Task 'create_subdirectory': Starting task run...
+2025-08-14T14:34:01.420007+00:00  | INFO     |   Created directory 'C:\b\abs_a2lrw7uhfo\clone'
+2025-08-14T14:34:01.505279+00:00  | INFO     |   Task 'create_subdirectory': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:01.605311+00:00  | INFO     |   Task 'pbp_upload': Starting task run...
+2025-08-14T14:34:01.796093+00:00  | INFO     |   Task 'pbp_upload': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:01.894925+00:00  | INFO     |   Task 'conda_version_info': Starting task run...
+2025-08-14T14:34:01.981794+00:00  | INFO     |   Conda command: conda --version ; conda build --version ; cph --version
+2025-08-14T14:34:09.237054+00:00  | INFO     |   Removing file C:\b\abs_prefect-2fy_x5nj
+2025-08-14T14:34:09.237054+00:00  | INFO     |   Conda version Info: ['conda 25.5.1', 'conda-build 25.5.0', 'conda-package-handling 2.4.0']
+2025-08-14T14:34:09.320701+00:00  | INFO     |   Task 'conda_version_info': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:09.65201+00:00   | INFO     |   Task 'base_branch': Starting task run...
+2025-08-14T14:34:09.883118+00:00  | INFO     |   Task 'base_branch': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:09.994742+00:00  | INFO     |   Task 'upload': Starting task run...
+2025-08-14T14:34:10.205323+00:00  | INFO     |   Task 'upload': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:10.304827+00:00  | INFO     |   Task 'git_ref': Starting task run...
+2025-08-14T14:34:10.495579+00:00  | INFO     |   Task 'git_ref': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:10.595111+00:00  | INFO     |   Task 'is_private': Starting task run...
+2025-08-14T14:34:10.777822+00:00  | INFO     |   Task 'is_private': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:10.881909+00:00  | INFO     |   Task 'docker_platform': Starting task run...
+2025-08-14T14:34:11.077876+00:00  | INFO     |   Task 'docker_platform': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:11.419937+00:00  | INFO     |   Task 'remove_intermediate_files': Starting task run...
+2025-08-14T14:34:11.604825+00:00  | INFO     |   Task 'remove_intermediate_files': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:11.710435+00:00  | INFO     |   Task 'folders': Starting task run...
+2025-08-14T14:34:11.881987+00:00  | INFO     |   Task 'folders': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:12.078+00:00     | INFO     |   Task 'pr_number': Starting task run...
+2025-08-14T14:34:12.271776+00:00  | INFO     |   Task 'pr_number': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:12.391875+00:00  | INFO     |   Task 'user': Starting task run...
+2025-08-14T14:34:13.036652+00:00  | INFO     |   Task 'user': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:13.136447+00:00  | INFO     |   Task 'create_subdirectory': Starting task run...
+2025-08-14T14:34:13.225211+00:00  | INFO     |   Created directory 'C:\b\abs_a2lrw7uhfo\croot'
+2025-08-14T14:34:13.305126+00:00  | INFO     |   Task 'create_subdirectory': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:13.39404+00:00   | INFO     |   Task 'case(True)': Starting task run...
+2025-08-14T14:34:13.48208+00:00   | INFO     |   SKIP signal raised: SKIP('Provided value "False" did not match "True"')
+2025-08-14T14:34:13.552782+00:00  | INFO     |   Task 'case(True)': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:34:13.652007+00:00  | INFO     |   Task 'case(True)': Starting task run...
+2025-08-14T14:34:13.738486+00:00  | INFO     |   SKIP signal raised: SKIP('Provided value "False" did not match "True"')
+2025-08-14T14:34:13.828313+00:00  | INFO     |   Task 'case(True)': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:34:13.926369+00:00  | INFO     |   Task 'info': Starting task run...
+2025-08-14T14:34:13.99566+00:00   | INFO     |   Using parameters: {"base_branch": "main-0.2.4", "remove_intermediate_files": false, "user": "vchychyrko-chychyrko", "ignore_skip_existing": false, "feedstock_name": "pythonanywhere-core-feedstock", "is_private": false, "git_ref": "218c389be104410dc1b5fe0f486a96d20a3d2e2c", "recipe_folders": ["recipe"], "update_status": true, "docker_platform": "", "pr_number": 2, "upload": false, "dispatch_id": "7c7ed3f5-ebf5-450d-9947-b26548c28ee0"}
+2025-08-14T14:34:13.99566+00:00   | INFO     |   len(pending_logs)/pending_length/queue-size:0/0/12
+2025-08-14T14:34:13.99566+00:00   | INFO     |   Cookbook version: '0+unknown'
+2025-08-14T14:34:14.01142+00:00   | INFO     |   Getting github rate info
+2025-08-14T14:34:14.27273+00:00   | INFO     |   Info data : {'base_branch': 'main-0.2.4', 'remove_intermediate_files': False, 'user': 'vchychyrko-chychyrko', 'ignore_skip_existing': False, 'feedstock_name': 'pythonanywhere-core-feedstock', 'is_private': False, 'git_ref': '218c389be104410dc1b5fe0f486a96d20a3d2e2c', 'recipe_folders': ['recipe'], 'update_status': True, 'docker_platform': '', 'pr_number': 2, 'upload': False, 'dispatch_id': '7c7ed3f5-ebf5-450d-9947-b26548c28ee0', 'platform': 'Windows-10-10.0.17763-SP0', 'rate-limit': '5000', 'rate-used': '550', 'rate-remaining': '4450'}
+2025-08-14T14:34:14.359967+00:00  | INFO     |   Task 'info': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:14.442571+00:00  | INFO     |   Task 'create_subdirectory': Starting task run...
+2025-08-14T14:34:14.542832+00:00  | INFO     |   Created directory 'C:\b\abs_a2lrw7uhfo\upload'
+2025-08-14T14:34:14.62695+00:00   | INFO     |   Task 'create_subdirectory': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:14.726723+00:00  | INFO     |   Task 'create_subdirectory': Starting task run...
+2025-08-14T14:34:14.826608+00:00  | INFO     |   Created directory 'C:\b\abs_a2lrw7uhfo\src_cache'
+2025-08-14T14:34:14.910641+00:00  | INFO     |   Task 'create_subdirectory': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:15.011188+00:00  | INFO     |   Task 'create_subdirectory': Starting task run...
+2025-08-14T14:34:15.094945+00:00  | INFO     |   Created directory 'C:\b\abs_a2lrw7uhfo\pkg_dirs'
+2025-08-14T14:34:15.200179+00:00  | INFO     |   Task 'create_subdirectory': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:15.29466+00:00   | INFO     |   Task 'case(True)': Starting task run...
+2025-08-14T14:34:15.394913+00:00  | INFO     |   SKIP signal raised: SKIP('Provided value "False" did not match "True"')
+2025-08-14T14:34:15.501687+00:00  | INFO     |   Task 'case(True)': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:34:15.600483+00:00  | INFO     |   Task 'git_init': Starting task run...
+2025-08-14T14:34:15.739655+00:00  | INFO     |   Fetching pythonanywhere-core-feedstock ref/branch/tag/sha1 '218c389be104410dc1b5fe0f486a96d20a3d2e2c'
+2025-08-14T14:34:15.740277+00:00  | INFO     |   Github Status Report
+2025-08-14T14:34:15.740277+00:00  | INFO     |   Get SHA from git ref
+2025-08-14T14:34:15.740819+00:00  | INFO     |   Check if the build is new
+2025-08-14T14:34:15.9053+00:00    | INFO     |   Updating github status check
+2025-08-14T14:34:15.921035+00:00  | INFO     |   Setting status on pythonanywhere-core-feedstock 218c389be104410dc1b5fe0f486a96d20a3d2e2c to pending
+2025-08-14T14:34:16.281973+00:00  | INFO     |   Request response code for github_status returned 201
+2025-08-14T14:34:16.281973+00:00  | INFO     |   Running command: git init "C:\b\abs_a2lrw7uhfo\clone"
+2025-08-14T14:34:16.758212+00:00  | INFO     |   hint: Using 'master' as the name for the initial branch. This default branch name
+2025-08-14T14:34:16.773846+00:00  | INFO     |   hint: is subject to change. To configure the initial branch name to use in all
+2025-08-14T14:34:16.794992+00:00  | INFO     |   hint: of your new repositories, which will suppress this warning, call:
+2025-08-14T14:34:16.811256+00:00  | INFO     |   hint:
+2025-08-14T14:34:16.826947+00:00  | INFO     |   hint: 	git config --global init.defaultBranch <name>
+2025-08-14T14:34:16.848698+00:00  | INFO     |   hint:
+2025-08-14T14:34:16.864973+00:00  | INFO     |   hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-08-14T14:34:16.873122+00:00  | INFO     |   hint: 'development'. The just-created branch can be renamed via this command:
+2025-08-14T14:34:16.882022+00:00  | INFO     |   hint:
+2025-08-14T14:34:16.910524+00:00  | INFO     |   hint: 	git branch -m <name>
+2025-08-14T14:34:16.926806+00:00  | INFO     |   Initialized empty Git repository in /cygdrive/c/b/abs_a2lrw7uhfo/clone/.git/
+2025-08-14T14:34:16.927369+00:00  | INFO     |   Removing file C:\b\abs_prefect-tr04egzf
+2025-08-14T14:34:16.995481+00:00  | INFO     |   Task 'git_init': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:17.178123+00:00  | INFO     |   Task 'git_add_origin': Starting task run...
+2025-08-14T14:34:17.304053+00:00  | INFO     |   Running command: git -C "C:\b\abs_a2lrw7uhfo\clone" remote add origin git@github.com:AnacondaRecipes/pythonanywhere-core-feedstock.git
+2025-08-14T14:34:17.511912+00:00  | INFO     |   Removing file C:\b\abs_prefect-ieb91g_h
+2025-08-14T14:34:17.581835+00:00  | INFO     |   Task 'git_add_origin': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:17.694967+00:00  | INFO     |   Task 'case(True)': Starting task run...
+2025-08-14T14:34:17.781636+00:00  | INFO     |   Task 'case(True)': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:34:17.89576+00:00   | INFO     |   Task 'case(True)': Starting task run...
+2025-08-14T14:34:17.995662+00:00  | INFO     |   Task 'case(True)': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:34:18.095541+00:00  | INFO     |   Task 'git_checkout': Starting task run...
+2025-08-14T14:34:18.201595+00:00  | INFO     |   Running command: ('git -C "C:\\b\\abs_a2lrw7uhfo\\clone" fetch origin 218c389be104410dc1b5fe0f486a96d20a3d2e2c:pkg_build', 'git -C "C:\\b\\abs_a2lrw7uhfo\\clone" checkout pkg_build')
+2025-08-14T14:34:18.694744+00:00  | INFO     |   Identity added: (stdin) (Anaconda-pkg-build key 2024-03-15 - SIR-884)
+2025-08-14T14:34:18.975179+00:00  | INFO     |   Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+2025-08-14T14:34:19.641855+00:00  | INFO     |   From github.com:AnacondaRecipes/pythonanywhere-core-feedstock
+2025-08-14T14:34:19.657478+00:00  | INFO     |    * [new ref]         218c389be104410dc1b5fe0f486a96d20a3d2e2c -> pkg_build
+2025-08-14T14:34:19.777982+00:00  | INFO     |   Switched to branch 'pkg_build'
+2025-08-14T14:34:19.781752+00:00  | INFO     |   Removing file C:\b\abs_prefect-_uojmr4i
+2025-08-14T14:34:19.853326+00:00  | INFO     |   Task 'git_checkout': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:19.953863+00:00  | INFO     |   Task 'git_get_head_commit': Starting task run...
+2025-08-14T14:34:20.296433+00:00  | INFO     |   Github Status Report
+2025-08-14T14:34:20.296433+00:00  | INFO     |   Check if the build is new
+2025-08-14T14:34:20.296433+00:00  | INFO     |   Removing file C:\b\abs_prefect-3dmxr8w0
+2025-08-14T14:34:20.296433+00:00  | INFO     |   Git head is at 218c389be104410dc1b5fe0f486a96d20a3d2e2c
+2025-08-14T14:34:20.483258+00:00  | INFO     |   Setting status on pythonanywhere-core-feedstock 218c389be104410dc1b5fe0f486a96d20a3d2e2c to pending
+2025-08-14T14:34:20.483258+00:00  | INFO     |   Updating github status check
+2025-08-14T14:34:20.720903+00:00  | INFO     |   Request response code for github_status returned 201
+2025-08-14T14:34:20.79737+00:00   | INFO     |   Task 'git_get_head_commit': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:20.921155+00:00  | INFO     |   Task 'config': Starting task run...
+2025-08-14T14:34:21.036451+00:00  | INFO     |   Skipping config file C:\b\abs_a2lrw7uhfo\clone\abs.yaml
+2025-08-14T14:34:21.036451+00:00  | INFO     |   Skipping config file C:\b\abs_a2lrw7uhfo\clone\.abs.d\abs.pr2.yaml
+2025-08-14T14:34:21.104939+00:00  | INFO     |   Task 'config': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:21.214499+00:00  | INFO     |   Task 'pbp_create': Starting task run...
+2025-08-14T14:34:21.309623+00:00  | INFO     |   Task 'pbp_create': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:34:21.404587+00:00  | INFO     |   Task 'pbp_create': Starting task run...
+2025-08-14T14:34:21.521047+00:00  | INFO     |   Task 'pbp_create': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:34:21.605241+00:00  | INFO     |   Task 'ensure_aggregate': Starting task run...
+2025-08-14T14:34:21.73639+00:00   | INFO     |   Running command: git clone -b master --depth 1 git@github.com:AnacondaRecipes/aggregate.git "C:\b\abs_a2lrw7uhfo\clone\.abs"
+2025-08-14T14:34:22.020535+00:00  | INFO     |   Identity added: (stdin) (Anaconda-pkg-build key 2024-03-15 - SIR-884)
+2025-08-14T14:34:22.051808+00:00  | INFO     |   Cloning into 'C:\b\abs_a2lrw7uhfo\clone\.abs'...
+2025-08-14T14:34:22.175673+00:00  | INFO     |   Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+2025-08-14T14:34:23.857789+00:00  | INFO     |   Updating files:  87% (2528/2883)Updating files:  88% (2538/2883)Updating files:  89% (2566/2883)Updating files:  90% (2595/2883)Updating files:  91% (2624/2883)Updating files:  92% (2653/2883)Updating files:  93% (2682/2883)Updating files:  94% (2711/2883)Updating files:  95% (2739/2883)Updating files:  96% (2768/2883)Updating files:  97% (2797/2883)Updating files:  98% (2826/2883)Updating files:  99% (2855/2883)Updating files: 100% (2883/2883)Updating files: 100% (2883/2883), done.
+2025-08-14T14:34:23.91494+00:00   | INFO     |   Removing file C:\b\abs_prefect-_3addjvy
+2025-08-14T14:34:23.978302+00:00  | INFO     |   Removing win-32 from conda_build_config.yaml
+2025-08-14T14:34:24.057353+00:00  | INFO     |   Task 'ensure_aggregate': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:24.195035+00:00  | INFO     |   Task 'git_get_short_commit': Starting task run...
+2025-08-14T14:34:24.497411+00:00  | INFO     |   Removing file C:\b\abs_prefect-aah_5z04
+2025-08-14T14:34:24.497411+00:00  | INFO     |   Git short head is 218c389
+2025-08-14T14:34:24.582412+00:00  | INFO     |   Task 'git_get_short_commit': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:24.673854+00:00  | INFO     |   Task 'compare_aggregate_ref': Starting task run...
+2025-08-14T14:34:24.842662+00:00  | INFO     |   DEFAULT does not have a branch/url in .gitmodules
+2025-08-14T14:34:24.962033+00:00  | INFO     |   Task 'compare_aggregate_ref': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:25.058324+00:00  | INFO     |   Task 'build_order': Starting task run...
+2025-08-14T14:34:25.216679+00:00  | INFO     |   Task 'build_order': Finished task run for task with final state: 'Success'
+2025-08-14T14:34:25.32395+00:00   | INFO     |   Task 'build': Starting task run...
+2025-08-14T14:34:25.395065+00:00  | INFO     |   Github Status Report
+2025-08-14T14:34:25.395065+00:00  | INFO     |   Building C:\b\abs_a2lrw7uhfo\clone
+2025-08-14T14:34:25.395065+00:00  | INFO     |   Check if the build is new
+2025-08-14T14:34:25.617135+00:00  | INFO     |   Updating github status check
+2025-08-14T14:34:25.617135+00:00  | INFO     |   Setting status on pythonanywhere-core-feedstock 218c389be104410dc1b5fe0f486a96d20a3d2e2c to pending
+2025-08-14T14:34:25.820632+00:00  | INFO     |   Request response code for github_status returned 201
+2025-08-14T14:34:27.852974+00:00  | INFO     |   Posting Event to Datadog
+2025-08-14T14:34:27.852974+00:00  | INFO     |   Removing file C:\b\abs_prefect-dgy5j5vh.bat
+2025-08-14T14:34:27.963763+00:00  | INFO     |   Datadog Response {'status': 'ok', 'event': {'id': 8236257490105345397, 'id_str': '8236257490105345397', 'title': 'Build Started', 'text': 'Executing build', 'date_happened': 1755182067, 'handle': None, 'priority': None, 'related_event_id': None, 'tags': ['platform:win-64', 'application:rocket-platform', 'flow_run:a2ee78d9-7dce-4288-b2d1-16c7fee539b0', 'feedstock:pythonanywhere-core-feedstock', 'pr_number:2'], 'url': 'https://app.datadoghq.com/event/event?id=8236257490105345397'}}
+2025-08-14T14:34:27.963763+00:00  | INFO     |   Calling integrated build logic for recipe
+2025-08-14T14:34:27.982471+00:00  | INFO     |   Skipping config file C:\b\abs_a2lrw7uhfo\clone\recipe\abs.yaml
+2025-08-14T14:34:27.982471+00:00  | INFO     |   Skipping config file C:\b\abs_a2lrw7uhfo\clone\.abs.d\abs.pr2.yaml
+2025-08-14T14:34:27.982471+00:00  | INFO     |   Skipping config file C:\b\abs_a2lrw7uhfo\clone\abs.yaml
+2025-08-14T14:34:27.982471+00:00  | INFO     |   Using the following configuration: {"aggregate_branch": "master", "aggregate_ref": "", "aggregate_check": true, "pkg_build_image_name": "public.ecr.aws/y0o4y9o3/anaconda-pkg-build", "pkg_build_image_tag": "latest", "build_parameters": ["--suppress-variables", "--skip-existing", "--error-overlinking"], "build_order": [], "channels": [], "upload_channels": ["defaults"], "upload_without_merge": false, "mark_private": false, "update_aggregate": false, "noarch_upload": ["linux-64"], "extra_labels_for_os": null, "staging_channel_upload_target": null, "upload_to_staging_channel_in_pr": true, "content_signing": {"win-64": true}, "use_prefect_platforms": null, "pbp_autopublish": false, "pbp_only_deployment": null}
+2025-08-14T14:34:27.982471+00:00  | INFO     |   Will move current workdir to: C:\b\abs_a2lrw7uhfo\clone\.abs
+2025-08-14T14:34:27.982471+00:00  | INFO     |   Running command: ['cd', '"C:\\b\\abs_a2lrw7uhfo\\clone\\.abs"', '&&', 'conda build', '"C:\\b\\abs_a2lrw7uhfo\\clone\\recipe"', '--output-folder', '"C:\\b\\abs_a2lrw7uhfo\\upload"', '--cache-dir', '"C:\\b\\abs_a2lrw7uhfo\\src_cache"', '--extra-meta', '"sha=218c389be104410dc1b5fe0f486a96d20a3d2e2c"', '"remote_url=git@github.com:AnacondaRecipes/pythonanywhere-core-feedstock.git"', '"flow_run_id=a2ee78d9-7dce-4288-b2d1-16c7fee539b0"', '--suppress-variables', '--skip-existing', '--error-overlinking', '--croot', '"C:\\b\\abs_a2lrw7uhfo\\croot"']
+2025-08-14T14:34:30.03659+00:00   | INFO     |   WARNING: No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.22
+2025-08-14T14:34:30.176193+00:00  | INFO     |   Adding in variants from internal_defaults
+2025-08-14T14:34:30.178347+00:00  | INFO     |   Adding in variants from C:\b\abs_a2lrw7uhfo\clone\.abs\conda_build_config.yaml
+2025-08-14T14:34:30.320871+00:00  | INFO     |   WARNING: Number of parsed outputs does not match detected raw metadata blocks. Identified output block may be wrong! If you are using Jinja conditionals to include or exclude outputs, consider using `skip: true  # [condition]` instead.
+2025-08-14T14:34:30.767637+00:00  | INFO     |   Attempting to finalize metadata for pythonanywhere-core
+2025-08-14T14:34:31.267292+00:00  | INFO     |   C:\miniconda3\lib\site-packages\conda\base\context.py:211: FutureWarning: Adding 'defaults' to channel list implicitly is deprecated and will be removed in 25.9.
+2025-08-14T14:34:31.295311+00:00  | INFO     |   
+2025-08-14T14:34:31.321128+00:00  | INFO     |   To remove this warning, please choose a default channel explicitly with conda's regular configuration system, e.g. by adding 'defaults' to the list of channels:
+2025-08-14T14:34:31.336781+00:00  | INFO     |   
+2025-08-14T14:34:31.352391+00:00  | INFO     |     conda config --add channels defaults
+2025-08-14T14:34:31.375651+00:00  | INFO     |   
+2025-08-14T14:34:31.394097+00:00  | INFO     |   For more information see https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/use-condarc.html
+2025-08-14T14:34:31.410471+00:00  | INFO     |   
+2025-08-14T14:34:31.436263+00:00  | INFO     |     deprecated.topic(
+2025-08-14T14:34:47.929019+00:00  | INFO     |   Reloading output folder: ...working... done
+2025-08-14T14:34:48.063522+00:00  | INFO     |   Getting pinned dependencies: ...working... done
+2025-08-14T14:34:55.674781+00:00  | INFO     |   Reloading output folder: ...working... done
+2025-08-14T14:34:55.728354+00:00  | INFO     |   Getting pinned dependencies: ...working... done
+2025-08-14T14:34:55.77852+00:00   | INFO     |   Indexing ['win-64'] does not include 'noarch'
+2025-08-14T14:34:55.79491+00:00   | INFO     |   
+2025-08-14T14:34:55.936722+00:00  | INFO     |   Indexing ['win-64'] does not include 'noarch'
+2025-08-14T14:34:55.961696+00:00  | INFO     |   
+2025-08-14T14:34:56.394456+00:00  | INFO     |   BUILD START: ['pythonanywhere-core-0.2.4-py312haa95532_0.tar.bz2']
+2025-08-14T14:34:58.152255+00:00  | INFO     |   Reloading output folder: ...working... done
+2025-08-14T14:34:58.205354+00:00  | INFO     |   Solving environment (_h_env): ...working... done
+2025-08-14T14:35:02.254566+00:00  | INFO     |   
+2025-08-14T14:35:02.270222+00:00  | INFO     |   ## Package Plan ##
+2025-08-14T14:35:02.295297+00:00  | INFO     |   
+2025-08-14T14:35:02.321142+00:00  | INFO     |     environment location: C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\_h_env
+2025-08-14T14:35:02.33678+00:00   | INFO     |   
+2025-08-14T14:35:02.352401+00:00  | INFO     |   
+2025-08-14T14:35:02.376117+00:00  | INFO     |   The following NEW packages will be INSTALLED:
+2025-08-14T14:35:02.39512+00:00   | INFO     |   
+2025-08-14T14:35:02.420965+00:00  | INFO     |       bzip2:           1.0.8-h2bbff1b_6        defaults
+2025-08-14T14:35:02.436594+00:00  | INFO     |       ca-certificates: 2025.7.15-haa95532_0    defaults
+2025-08-14T14:35:02.452211+00:00  | INFO     |       expat:           2.7.1-h8ddb27b_0        defaults
+2025-08-14T14:35:02.467838+00:00  | INFO     |       libffi:          3.4.4-hd77b12b_1        defaults
+2025-08-14T14:35:02.482983+00:00  | INFO     |       openssl:         3.0.17-h35632f6_0       defaults
+2025-08-14T14:35:02.511793+00:00  | INFO     |       pip:             25.1-pyhc872135_2       defaults
+2025-08-14T14:35:02.537886+00:00  | INFO     |       poetry-core:     2.1.3-py312haa95532_0   defaults
+2025-08-14T14:35:02.553524+00:00  | INFO     |       python:          3.12.11-h716150d_0      defaults
+2025-08-14T14:35:02.566707+00:00  | INFO     |       setuptools:      78.1.1-py312haa95532_0  defaults
+2025-08-14T14:35:02.578147+00:00  | INFO     |       sqlite:          3.50.2-hda9a48d_1       defaults
+2025-08-14T14:35:02.595714+00:00  | INFO     |       tk:              8.6.14-h5e9d12e_1       defaults
+2025-08-14T14:35:02.621597+00:00  | INFO     |       tzdata:          2025b-h04d1e81_0        defaults
+2025-08-14T14:35:02.637249+00:00  | INFO     |       ucrt:            10.0.22621.0-haa95532_0 defaults
+2025-08-14T14:35:02.652856+00:00  | INFO     |       vc:              14.3-h2df5915_10        defaults
+2025-08-14T14:35:02.668487+00:00  | INFO     |       vc14_runtime:    14.44.35208-h4927774_10 defaults
+2025-08-14T14:35:02.685041+00:00  | INFO     |       vs2015_runtime:  14.44.35208-ha6b5a95_10 defaults
+2025-08-14T14:35:02.686723+00:00  | INFO     |       wheel:           0.45.1-py312haa95532_0  defaults
+2025-08-14T14:35:02.712936+00:00  | INFO     |       xz:              5.6.4-h4754444_1        defaults
+2025-08-14T14:35:02.723005+00:00  | INFO     |       zlib:            1.2.13-h8cc25b3_1       defaults
+2025-08-14T14:35:02.738793+00:00  | INFO     |   
+2025-08-14T14:35:02.754417+00:00  | INFO     |   Preparing transaction: ...working... done
+2025-08-14T14:35:08.021363+00:00  | INFO     |   Verifying transaction: ...working... done
+2025-08-14T14:35:19.195521+00:00  | INFO     |   Executing transaction: ...working... done
+2025-08-14T14:35:21.352758+00:00  | INFO     |   Reloading output folder: ...working... done
+2025-08-14T14:35:21.512308+00:00  | INFO     |   Solving environment (_test_env): ...working... done
+2025-08-14T14:35:21.522474+00:00  | INFO     |   Source cache directory is: C:\b\abs_a2lrw7uhfo\src_cache\src_cache
+2025-08-14T14:35:21.531172+00:00  | INFO     |   Downloading source to cache: pythonanywhere_core-0.2.4_40fcef8efc.tar.gz
+2025-08-14T14:35:21.547506+00:00  | INFO     |   Downloading https://pypi.org/packages/source/p/pythonanywhere-core/pythonanywhere_core-0.2.4.tar.gz
+2025-08-14T14:35:21.621551+00:00  | INFO     |   Success
+2025-08-14T14:35:21.714849+00:00  | INFO     |   Extracting download
+2025-08-14T14:35:21.740655+00:00  | INFO     |   Downloading source to cache: v0.2.4_ff0ccf5c35.tar.gz
+2025-08-14T14:35:21.756283+00:00  | INFO     |   Downloading https://github.com/pythonanywhere/pythonanywhere-core/archive/refs/tags/v0.2.4.tar.gz
+2025-08-14T14:35:22.337321+00:00  | INFO     |   WARNING: Using legacy MSVC compiler setup.  This will be removed in conda-build 4.0. If this recipe does not use a compiler, this message is safe to ignore.  Otherwise, use {{compiler('<language>')}} jinja2 in requirements/build.
+2025-08-14T14:35:22.547914+00:00  | INFO     |   Extracting download
+2025-08-14T14:35:22.563556+00:00  | INFO     |   
+2025-08-14T14:35:22.578757+00:00  | INFO     |   Rendered as:
+2025-08-14T14:35:22.59578+00:00   | INFO     |   ```yaml
+2025-08-14T14:35:22.621581+00:00  | INFO     |   package:
+2025-08-14T14:35:22.637758+00:00  | INFO     |     name: pythonanywhere-core
+2025-08-14T14:35:22.668475+00:00  | INFO     |     version: 0.2.4
+2025-08-14T14:35:22.695532+00:00  | INFO     |   source:
+2025-08-14T14:35:22.721427+00:00  | INFO     |     - url: https://pypi.org/packages/source/p/pythonanywhere-core/pythonanywhere_core-0.2.4.tar.gz
+2025-08-14T14:35:22.737076+00:00  | INFO     |       sha256: 40fcef8efc31ccc5478a41305ce96abec2eabe532d549bc04787328d46519a3a
+2025-08-14T14:35:22.752696+00:00  | INFO     |     - url: https://github.com/pythonanywhere/pythonanywhere-core/archive/refs/tags/v0.2.4.tar.gz
+2025-08-14T14:35:22.768326+00:00  | INFO     |       sha256: ff0ccf5c350eea9c04147b307634749286e9f0f86a2d01ee879a14473fd47c89
+2025-08-14T14:35:22.795309+00:00  | INFO     |       folder: gh_src
+2025-08-14T14:35:22.821118+00:00  | INFO     |   build:
+2025-08-14T14:35:22.841527+00:00  | INFO     |     number: '0'
+2025-08-14T14:35:22.85781+00:00   | INFO     |     script: C:\\b\\abs_a2lrw7uhfo\\croot\\pythonanywhere-core_1755182070219\\_h_env\\python.exe
+2025-08-14T14:35:22.873552+00:00  | INFO     |       -m pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir
+2025-08-14T14:35:22.878363+00:00  | INFO     |       -vv
+2025-08-14T14:35:22.895708+00:00  | INFO     |   requirements:
+2025-08-14T14:35:22.921615+00:00  | INFO     |     host:
+2025-08-14T14:35:22.937238+00:00  | INFO     |       - ca-certificates 2025.7.15 haa95532_0
+2025-08-14T14:35:22.952869+00:00  | INFO     |       - tzdata 2025b h04d1e81_0
+2025-08-14T14:35:22.975435+00:00  | INFO     |       - ucrt 10.0.22621.0 haa95532_0
+2025-08-14T14:35:22.995697+00:00  | INFO     |       - vc14_runtime 14.44.35208 h4927774_10
+2025-08-14T14:35:23.021624+00:00  | INFO     |       - vc 14.3 h2df5915_10
+2025-08-14T14:35:23.037272+00:00  | INFO     |       - vs2015_runtime 14.44.35208 ha6b5a95_10
+2025-08-14T14:35:23.052891+00:00  | INFO     |       - bzip2 1.0.8 h2bbff1b_6
+2025-08-14T14:35:23.068509+00:00  | INFO     |       - expat 2.7.1 h8ddb27b_0
+2025-08-14T14:35:23.095658+00:00  | INFO     |       - libffi 3.4.4 hd77b12b_1
+2025-08-14T14:35:23.105728+00:00  | INFO     |       - openssl 3.0.17 h35632f6_0
+2025-08-14T14:35:23.121482+00:00  | INFO     |       - sqlite 3.50.2 hda9a48d_1
+2025-08-14T14:35:23.137135+00:00  | INFO     |       - xz 5.6.4 h4754444_1
+2025-08-14T14:35:23.152749+00:00  | INFO     |       - zlib 1.2.13 h8cc25b3_1
+2025-08-14T14:35:23.176246+00:00  | INFO     |       - tk 8.6.14 h5e9d12e_1
+2025-08-14T14:35:23.195864+00:00  | INFO     |       - python 3.12.11 h716150d_0
+2025-08-14T14:35:23.205934+00:00  | INFO     |       - poetry-core 2.1.3 py312haa95532_0
+2025-08-14T14:35:23.221683+00:00  | INFO     |       - setuptools 78.1.1 py312haa95532_0
+2025-08-14T14:35:23.243696+00:00  | INFO     |       - wheel 0.45.1 py312haa95532_0
+2025-08-14T14:35:23.266472+00:00  | INFO     |       - pip 25.1 pyhc872135_2
+2025-08-14T14:35:23.282716+00:00  | INFO     |     run:
+2025-08-14T14:35:23.31113+00:00   | INFO     |       - snakesay >=0.10.3,<0.11.0
+2025-08-14T14:35:23.336947+00:00  | INFO     |       - python >=3.12,<3.13.0a0
+2025-08-14T14:35:23.352577+00:00  | INFO     |       - requests >=2.30.0,<3.0
+2025-08-14T14:35:23.368056+00:00  | INFO     |       - typing_extensions >=4.5.0,<5.0
+2025-08-14T14:35:23.394497+00:00  | INFO     |       - python-dateutil >=2.8.2,<3.0
+2025-08-14T14:35:23.409598+00:00  | INFO     |   test:
+2025-08-14T14:35:23.419786+00:00  | INFO     |     source_files:
+2025-08-14T14:35:23.43935+00:00   | INFO     |       - gh_src/tests
+2025-08-14T14:35:23.454937+00:00  | INFO     |     requires:
+2025-08-14T14:35:23.470562+00:00  | INFO     |       - responses >=0.25.0,<1.0
+2025-08-14T14:35:23.478751+00:00  | INFO     |       - pip
+2025-08-14T14:35:23.495762+00:00  | INFO     |       - pytest >=8.0.0,<9
+2025-08-14T14:35:23.518069+00:00  | INFO     |       - pytest-mock >=3.10.0,<4.0
+2025-08-14T14:35:23.548201+00:00  | INFO     |     commands:
+2025-08-14T14:35:23.563829+00:00  | INFO     |       - pip check
+2025-08-14T14:35:23.582616+00:00  | INFO     |       - python -c "from importlib.metadata import version; assert(version('pythonanywhere-core')=='0.2.4')"
+2025-08-14T14:35:23.59544+00:00   | INFO     |       - pytest gh_src/tests -vv --color=yes --deselect=test_ls_bad_path
+2025-08-14T14:35:23.611322+00:00  | INFO     |     imports:
+2025-08-14T14:35:23.621397+00:00  | INFO     |       - pythonanywhere_core
+2025-08-14T14:35:23.634188+00:00  | INFO     |       - pythonanywhere_core.base
+2025-08-14T14:35:23.661497+00:00  | INFO     |       - pythonanywhere_core.exceptions
+2025-08-14T14:35:23.67713+00:00   | INFO     |       - pythonanywhere_core.files
+2025-08-14T14:35:23.695577+00:00  | INFO     |       - pythonanywhere_core.schedule
+2025-08-14T14:35:23.721499+00:00  | INFO     |       - pythonanywhere_core.students
+2025-08-14T14:35:23.737118+00:00  | INFO     |       - pythonanywhere_core.webapp
+2025-08-14T14:35:23.752755+00:00  | INFO     |       - pythonanywhere_core.website
+2025-08-14T14:35:23.768365+00:00  | INFO     |   about:
+2025-08-14T14:35:23.794852+00:00  | INFO     |     home: https://github.com/pythonanywhere/pythonanywhere-core
+2025-08-14T14:35:23.821061+00:00  | INFO     |     dev_url: https://github.com/pythonanywhere/pythonanywhere-core
+2025-08-14T14:35:23.837042+00:00  | INFO     |     doc_url: https://github.com/pythonanywhere/pythonanywhere-core/tree/master/docs
+2025-08-14T14:35:23.852325+00:00  | INFO     |     license: MIT
+2025-08-14T14:35:23.868064+00:00  | INFO     |     license_file: LICENSE
+2025-08-14T14:35:23.870085+00:00  | INFO     |     license_family: MIT
+2025-08-14T14:35:23.895604+00:00  | INFO     |     summary: API wrapper for programmatic management of PythonAnywhere services
+2025-08-14T14:35:23.911303+00:00  | INFO     |     description: It's an extraction and improvement of core code behind PythonAnywhere
+2025-08-14T14:35:23.92693+00:00   | INFO     |       cli tool
+2025-08-14T14:35:23.942505+00:00  | INFO     |   extra:
+2025-08-14T14:35:23.958138+00:00  | INFO     |     final: true
+2025-08-14T14:35:23.975622+00:00  | INFO     |     copy_test_source_files: true
+2025-08-14T14:35:23.995603+00:00  | INFO     |   ```
+2025-08-14T14:35:24.011302+00:00  | INFO     |   
+2025-08-14T14:35:24.026898+00:00  | INFO     |   source tree in: C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\work
+2025-08-14T14:35:24.042505+00:00  | INFO     |   Rewriting env in output: {'BUILD_PREFIX': 'C:\\b\\abs_a2lrw7uhfo\\croot\\pythonanywhere-core_1755182070219\\_build_env',
+2025-08-14T14:35:24.058131+00:00  | INFO     |    'PREFIX': 'C:\\b\\abs_a2lrw7uhfo\\croot\\pythonanywhere-core_1755182070219\\_h_env',
+2025-08-14T14:35:24.073758+00:00  | INFO     |    'SRC_DIR': 'C:\\b\\abs_a2lrw7uhfo\\croot\\pythonanywhere-core_1755182070219\\work'}
+2025-08-14T14:35:24.095256+00:00  | INFO     |   
+2025-08-14T14:35:24.120056+00:00  | INFO     |   %SRC_DIR%>IF "" == "" (call %SRC_DIR%\build_env_setup.bat )
+2025-08-14T14:35:24.135685+00:00  | INFO     |   
+2025-08-14T14:35:24.151315+00:00  | INFO     |   %SRC_DIR%>set "CONDA_BUILD=1"
+2025-08-14T14:35:24.176203+00:00  | INFO     |   
+2025-08-14T14:35:24.195773+00:00  | INFO     |   %SRC_DIR%>set "PYTHONNOUSERSITE=1"
+2025-08-14T14:35:24.212055+00:00  | INFO     |   
+2025-08-14T14:35:24.22772+00:00   | INFO     |   %SRC_DIR%>set "CONDA_DEFAULT_ENV=%PREFIX%"
+2025-08-14T14:35:24.243356+00:00  | INFO     |   
+2025-08-14T14:35:24.267163+00:00  | INFO     |   %SRC_DIR%>set "ARCH=64"
+2025-08-14T14:35:24.28259+00:00   | INFO     |   
+2025-08-14T14:35:24.303857+00:00  | INFO     |   %SRC_DIR%>set "PREFIX=%PREFIX%"
+2025-08-14T14:35:24.319515+00:00  | INFO     |   
+2025-08-14T14:35:24.335155+00:00  | INFO     |   %SRC_DIR%>set "BUILD_PREFIX=%BUILD_PREFIX%"
+2025-08-14T14:35:24.358964+00:00  | INFO     |   
+2025-08-14T14:35:24.376468+00:00  | INFO     |   %SRC_DIR%>set "SYS_PREFIX=C:\miniconda3"
+2025-08-14T14:35:24.395429+00:00  | INFO     |   
+2025-08-14T14:35:24.411712+00:00  | INFO     |   %SRC_DIR%>set "SYS_PYTHON=C:\miniconda3\python.exe"
+2025-08-14T14:35:24.427367+00:00  | INFO     |   
+2025-08-14T14:35:24.442986+00:00  | INFO     |   %SRC_DIR%>set "SUBDIR=win-64"
+2025-08-14T14:35:24.458598+00:00  | INFO     |   
+2025-08-14T14:35:24.474223+00:00  | INFO     |   %SRC_DIR%>set "build_platform=win-64"
+2025-08-14T14:35:24.47837+00:00   | INFO     |   
+2025-08-14T14:35:24.495514+00:00  | INFO     |   %SRC_DIR%>set "SRC_DIR=%SRC_DIR%"
+2025-08-14T14:35:24.512441+00:00  | INFO     |   
+2025-08-14T14:35:24.528076+00:00  | INFO     |   %SRC_DIR%>set "ROOT=C:\miniconda3"
+2025-08-14T14:35:24.532158+00:00  | INFO     |   
+2025-08-14T14:35:24.534657+00:00  | INFO     |   %SRC_DIR%>set "CONDA_PY=312"
+2025-08-14T14:35:24.551007+00:00  | INFO     |   
+2025-08-14T14:35:24.566703+00:00  | INFO     |   %SRC_DIR%>set "PY3K=1"
+2025-08-14T14:35:24.582292+00:00  | INFO     |   
+2025-08-14T14:35:24.61127+00:00   | INFO     |   %SRC_DIR%>set "PY_VER=3.12"
+2025-08-14T14:35:24.627544+00:00  | INFO     |   
+2025-08-14T14:35:24.64317+00:00   | INFO     |   %SRC_DIR%>set "STDLIB_DIR=%PREFIX%\Lib"
+2025-08-14T14:35:24.658804+00:00  | INFO     |   
+2025-08-14T14:35:24.67442+00:00   | INFO     |   %SRC_DIR%>set "SP_DIR=%PREFIX%\Lib\site-packages"
+2025-08-14T14:35:24.695866+00:00  | INFO     |   
+2025-08-14T14:35:24.711616+00:00  | INFO     |   %SRC_DIR%>set "PYTHON=%PREFIX%\python.exe"
+2025-08-14T14:35:24.727322+00:00  | INFO     |   
+2025-08-14T14:35:24.742885+00:00  | INFO     |   %SRC_DIR%>set "NPY_VER=2.0"
+2025-08-14T14:35:24.758527+00:00  | INFO     |   
+2025-08-14T14:35:24.774136+00:00  | INFO     |   %SRC_DIR%>set "CONDA_NPY=2.0"
+2025-08-14T14:35:24.795372+00:00  | INFO     |   
+2025-08-14T14:35:24.810678+00:00  | INFO     |   %SRC_DIR%>set "NPY_DISTUTILS_APPEND_FLAGS=1"
+2025-08-14T14:35:24.811903+00:00  | INFO     |   
+2025-08-14T14:35:24.837007+00:00  | INFO     |   %SRC_DIR%>set "PERL_VER=5.38"
+2025-08-14T14:35:24.85265+00:00   | INFO     |   
+2025-08-14T14:35:24.868362+00:00  | INFO     |   %SRC_DIR%>set "CONDA_PERL=5.38"
+2025-08-14T14:35:24.89538+00:00   | INFO     |   
+2025-08-14T14:35:24.911689+00:00  | INFO     |   %SRC_DIR%>set "LUA_VER=5"
+2025-08-14T14:35:24.927439+00:00  | INFO     |   
+2025-08-14T14:35:24.942947+00:00  | INFO     |   %SRC_DIR%>set "CONDA_LUA=5"
+2025-08-14T14:35:24.95857+00:00   | INFO     |   
+2025-08-14T14:35:24.959623+00:00  | INFO     |   %SRC_DIR%>set "R_VER=4.3.1"
+2025-08-14T14:35:24.976002+00:00  | INFO     |   
+2025-08-14T14:35:24.995403+00:00  | INFO     |   %SRC_DIR%>set "CONDA_R=4.3.1"
+2025-08-14T14:35:25.011703+00:00  | INFO     |   
+2025-08-14T14:35:25.027349+00:00  | INFO     |   %SRC_DIR%>set "PKG_NAME=pythonanywhere-core"
+2025-08-14T14:35:25.042946+00:00  | INFO     |   
+2025-08-14T14:35:25.07148+00:00   | INFO     |   %SRC_DIR%>set "PKG_VERSION=0.2.4"
+2025-08-14T14:35:25.078671+00:00  | INFO     |   
+2025-08-14T14:35:25.082279+00:00  | INFO     |   %SRC_DIR%>set "PKG_BUILDNUM=0"
+2025-08-14T14:35:25.09543+00:00   | INFO     |   
+2025-08-14T14:35:25.112443+00:00  | INFO     |   %SRC_DIR%>set "PKG_BUILD_STRING=placeholder"
+2025-08-14T14:35:25.128075+00:00  | INFO     |   
+2025-08-14T14:35:25.143696+00:00  | INFO     |   %SRC_DIR%>set "PKG_HASH=1234567"
+2025-08-14T14:35:25.159376+00:00  | INFO     |   
+2025-08-14T14:35:25.176343+00:00  | INFO     |   %SRC_DIR%>set "RECIPE_DIR=C:\b\abs_a2lrw7uhfo\clone\recipe"
+2025-08-14T14:35:25.195444+00:00  | INFO     |   
+2025-08-14T14:35:25.212897+00:00  | INFO     |   %SRC_DIR%>set "CPU_COUNT=8"
+2025-08-14T14:35:25.228528+00:00  | INFO     |   
+2025-08-14T14:35:25.24416+00:00   | INFO     |   %SRC_DIR%>set "LANG=en_US.UTF-8"
+2025-08-14T14:35:25.259771+00:00  | INFO     |   
+2025-08-14T14:35:25.275402+00:00  | INFO     |   %SRC_DIR%>set "SHLIB_EXT=.dll"
+2025-08-14T14:35:25.291015+00:00  | INFO     |   
+2025-08-14T14:35:25.306635+00:00  | INFO     |   %SRC_DIR%>set "PATH=%BUILD_PREFIX%;%BUILD_PREFIX%\Library\mingw-w64\bin;%BUILD_PREFIX%\Library\usr\bin;%BUILD_PREFIX%\Library\bin;%BUILD_PREFIX%\Scripts;%BUILD_PREFIX%\bin;%PREFIX%;%PREFIX%\Library\mingw-w64\bin;%PREFIX%\Library\usr\bin;%PREFIX%\Library\bin;%PREFIX%\Scripts;%PREFIX%\bin;C:\cygwin64\usr\local\bin;C:\cygwin64\bin;C:\miniconda3;C:\miniconda3\Library\mingw-w64\bin;C:\miniconda3\Library\usr\bin;C:\miniconda3\Library\bin;C:\miniconda3\Scripts;C:\miniconda3\bin;C:\miniconda3\condabin;C:\Program Files (x86)\Intel\oneAPI\tbb\latest\redist\intel64\vc_mt;C:\Program Files (x86)\Intel\oneAPI\tbb\latest\redist\ia32\vc_mt;C:\Program Files (x86)\Intel\oneAPI\mpi\latest\bin;C:\Program Files (x86)\Intel\oneAPI\mpi\latest\bin\release;C:\Program Files (x86)\Intel\oneAPI\mpi\latest\libfabric\bin;C:\Program Files (x86)\Intel\oneAPI\mpi\latest\libfabric\bin\utils;C:\Program Files (x86)\Intel\oneAPI\compiler\latest\windows\redist\intel64_win\compiler;C:\Program Files (x86)\Intel\oneAPI\compiler\latest\windows\redist\ia32_win\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\OpenSSH-Win64;C:\Users\builder-admin\AppData\Local\Microsoft\WindowsApps;C:\Users\builder-admin\.dotnet\tools"
+2025-08-14T14:35:25.322266+00:00  | INFO     |   
+2025-08-14T14:35:25.337923+00:00  | INFO     |   %SRC_DIR%>set "SCRIPTS=%PREFIX%\Scripts"
+2025-08-14T14:35:25.353558+00:00  | INFO     |   
+2025-08-14T14:35:25.359296+00:00  | INFO     |   %SRC_DIR%>set "LIBRARY_PREFIX=%PREFIX%\Library"
+2025-08-14T14:35:25.376909+00:00  | INFO     |   
+2025-08-14T14:35:25.395005+00:00  | INFO     |   %SRC_DIR%>set "LIBRARY_BIN=%PREFIX%\Library\bin"
+2025-08-14T14:35:25.400318+00:00  | INFO     |   
+2025-08-14T14:35:25.416111+00:00  | INFO     |   %SRC_DIR%>set "LIBRARY_INC=%PREFIX%\Library\include"
+2025-08-14T14:35:25.432392+00:00  | INFO     |   
+2025-08-14T14:35:25.448051+00:00  | INFO     |   %SRC_DIR%>set "LIBRARY_LIB=%PREFIX%\Library\lib"
+2025-08-14T14:35:25.463679+00:00  | INFO     |   
+2025-08-14T14:35:25.483014+00:00  | INFO     |   %SRC_DIR%>set "CYGWIN_PREFIX=/cygdrive/c/b/abs_a2lrw7uhfo/croot/pythonanywhere-core_1755182070219/_h_env"
+2025-08-14T14:35:25.512316+00:00  | INFO     |   
+2025-08-14T14:35:25.527483+00:00  | INFO     |   %SRC_DIR%>set "ALLUSERSPROFILE=C:\ProgramData"
+2025-08-14T14:35:25.551636+00:00  | INFO     |   
+2025-08-14T14:35:25.567338+00:00  | INFO     |   %SRC_DIR%>set "APPDATA=C:\Users\builder-admin\AppData\Roaming"
+2025-08-14T14:35:25.582718+00:00  | INFO     |   
+2025-08-14T14:35:25.611394+00:00  | INFO     |   %SRC_DIR%>set "CommonProgramFiles=C:\Program Files\Common Files"
+2025-08-14T14:35:25.62769+00:00   | INFO     |   
+2025-08-14T14:35:25.643349+00:00  | INFO     |   %SRC_DIR%>set "CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files"
+2025-08-14T14:35:25.658946+00:00  | INFO     |   
+2025-08-14T14:35:25.674578+00:00  | INFO     |   %SRC_DIR%>set "CommonProgramW6432=C:\Program Files\Common Files"
+2025-08-14T14:35:25.678761+00:00  | INFO     |   
+2025-08-14T14:35:25.695572+00:00  | INFO     |   %SRC_DIR%>set "COMPUTERNAME=EC2AMAZ-M2QJG10"
+2025-08-14T14:35:25.721541+00:00  | INFO     |   
+2025-08-14T14:35:25.737181+00:00  | INFO     |   %SRC_DIR%>set "ComSpec=C:\Windows\system32\cmd.exe"
+2025-08-14T14:35:25.752806+00:00  | INFO     |   
+2025-08-14T14:35:25.761587+00:00  | INFO     |   %SRC_DIR%>set "LOCALAPPDATA=C:\Users\builder-admin\AppData\Local"
+2025-08-14T14:35:25.778572+00:00  | INFO     |   
+2025-08-14T14:35:25.795015+00:00  | INFO     |   %SRC_DIR%>set "NUMBER_OF_PROCESSORS=8"
+2025-08-14T14:35:25.805501+00:00  | INFO     |   
+2025-08-14T14:35:25.821271+00:00  | INFO     |   %SRC_DIR%>set "PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL"
+2025-08-14T14:35:25.836912+00:00  | INFO     |   
+2025-08-14T14:35:25.85254+00:00   | INFO     |   %SRC_DIR%>set "ProgramData=C:\ProgramData"
+2025-08-14T14:35:25.869515+00:00  | INFO     |   
+2025-08-14T14:35:25.873369+00:00  | INFO     |   %SRC_DIR%>set "ProgramFiles=C:\Program Files"
+2025-08-14T14:35:25.895793+00:00  | INFO     |   
+2025-08-14T14:35:25.9242+00:00    | INFO     |   %SRC_DIR%>set "ProgramFiles(x86)=C:\Program Files (x86)"
+2025-08-14T14:35:25.939832+00:00  | INFO     |   
+2025-08-14T14:35:25.955456+00:00  | INFO     |   %SRC_DIR%>set "ProgramW6432=C:\Program Files"
+2025-08-14T14:35:25.976464+00:00  | INFO     |   
+2025-08-14T14:35:25.995703+00:00  | INFO     |   %SRC_DIR%>set "PSModulePath=C:\Users\builder-admin\Documents\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\WindowsPowerShell\Modules"
+2025-08-14T14:35:26.015464+00:00  | INFO     |   
+2025-08-14T14:35:26.042862+00:00  | INFO     |   %SRC_DIR%>set "PUBLIC=C:\Users\Public"
+2025-08-14T14:35:26.058419+00:00  | INFO     |   
+2025-08-14T14:35:26.074054+00:00  | INFO     |   %SRC_DIR%>set "SystemDrive=C:"
+2025-08-14T14:35:26.092855+00:00  | INFO     |   
+2025-08-14T14:35:26.111455+00:00  | INFO     |   %SRC_DIR%>set "SystemRoot=C:\Windows"
+2025-08-14T14:35:26.127783+00:00  | INFO     |   
+2025-08-14T14:35:26.143382+00:00  | INFO     |   %SRC_DIR%>set "TEMP=C:\cygwin64\tmp"
+2025-08-14T14:35:26.159006+00:00  | INFO     |   
+2025-08-14T14:35:26.176419+00:00  | INFO     |   %SRC_DIR%>set "TMP=C:\cygwin64\tmp"
+2025-08-14T14:35:26.178828+00:00  | INFO     |   
+2025-08-14T14:35:26.195488+00:00  | INFO     |   %SRC_DIR%>set "USERDOMAIN=EC2AMAZ-M2QJG10"
+2025-08-14T14:35:26.221477+00:00  | INFO     |   
+2025-08-14T14:35:26.237111+00:00  | INFO     |   %SRC_DIR%>set "USERNAME=builder-admin"
+2025-08-14T14:35:26.260275+00:00  | INFO     |   
+2025-08-14T14:35:26.275484+00:00  | INFO     |   %SRC_DIR%>set "USERPROFILE=C:\Users\builder-admin"
+2025-08-14T14:35:26.295428+00:00  | INFO     |   
+2025-08-14T14:35:26.321393+00:00  | INFO     |   %SRC_DIR%>set "windir=C:\Windows"
+2025-08-14T14:35:26.337034+00:00  | INFO     |   
+2025-08-14T14:35:26.352637+00:00  | INFO     |   %SRC_DIR%>set "PROCESSOR_ARCHITECTURE=AMD64"
+2025-08-14T14:35:26.375859+00:00  | INFO     |   
+2025-08-14T14:35:26.394934+00:00  | INFO     |   %SRC_DIR%>set "PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 85 Stepping 7, GenuineIntel"
+2025-08-14T14:35:26.421137+00:00  | INFO     |   
+2025-08-14T14:35:26.437431+00:00  | INFO     |   %SRC_DIR%>set "BUILD=amd64-pc-windows-19.0.0"
+2025-08-14T14:35:26.453061+00:00  | INFO     |   
+2025-08-14T14:35:26.465659+00:00  | INFO     |   %SRC_DIR%>set "VS2017INSTALLDIR=C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools"
+2025-08-14T14:35:26.478635+00:00  | INFO     |   
+2025-08-14T14:35:26.481872+00:00  | INFO     |   %SRC_DIR%>set "VS2019INSTALLDIR=C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools"
+2025-08-14T14:35:26.484019+00:00  | INFO     |   
+2025-08-14T14:35:26.495413+00:00  | INFO     |   The system cannot find the path specified.
+2025-08-14T14:35:26.496504+00:00  | INFO     |   
+2025-08-14T14:35:26.512293+00:00  | INFO     |   EnvironmentLocationNotFound: Not a conda environment: C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\_build_env
+2025-08-14T14:35:26.513543+00:00  | INFO     |   
+2025-08-14T14:35:28.075608+00:00  | INFO     |     Running command Preparing metadata (pyproject.toml)
+2025-08-14T14:35:28.495631+00:00  | INFO     |     The "poetry.dev-dependencies" section is deprecated and will be removed in a future version. Use "poetry.group.dev.dependencies" instead.
+2025-08-14T14:35:28.621304+00:00  | INFO     |   %SRC_DIR%>set "VS2022INSTALLDIR=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools"
+2025-08-14T14:35:28.636944+00:00  | INFO     |   
+2025-08-14T14:35:28.652557+00:00  | INFO     |   %SRC_DIR%>set "ignore_build_only_deps={'python', 'numpy'}"
+2025-08-14T14:35:28.66824+00:00   | INFO     |   
+2025-08-14T14:35:28.695715+00:00  | INFO     |   %SRC_DIR%>set "extend_keys={'ignore_build_only_deps', 'ignore_version', 'extend_keys', 'pin_run_as_build'}"
+2025-08-14T14:35:28.721752+00:00  | INFO     |   
+2025-08-14T14:35:28.737389+00:00  | INFO     |   %SRC_DIR%>set "pin_run_as_build=OrderedDict([('python', {'min_pin': 'x.x', 'max_pin': 'x.x'}), ('r-base', {'min_pin': 'x.x', 'max_pin': 'x.x'}), ('libboost', {'max_pin': 'x.x.x'})])"
+2025-08-14T14:35:28.753012+00:00  | INFO     |   
+2025-08-14T14:35:28.768644+00:00  | INFO     |   %SRC_DIR%>set "zip_keys=[['python', 'numpy']]"
+2025-08-14T14:35:28.795453+00:00  | INFO     |   
+2025-08-14T14:35:28.821341+00:00  | INFO     |   %SRC_DIR%>set "libxkbcommon=1"
+2025-08-14T14:35:28.836981+00:00  | INFO     |   
+2025-08-14T14:35:28.852598+00:00  | INFO     |   %SRC_DIR%>set "libcryptominisat=5.6"
+2025-08-14T14:35:28.868233+00:00  | INFO     |   
+2025-08-14T14:35:28.889864+00:00  | INFO     |   %SRC_DIR%>set "leveldb=1.23"
+2025-08-14T14:35:28.890921+00:00  | INFO     |   
+2025-08-14T14:35:28.917263+00:00  | INFO     |   %SRC_DIR%>set "proj=9.3.1"
+2025-08-14T14:35:28.943069+00:00  | INFO     |   
+2025-08-14T14:35:28.958768+00:00  | INFO     |   %SRC_DIR%>set "armadillo=12"
+2025-08-14T14:35:28.978305+00:00  | INFO     |   
+2025-08-14T14:35:28.995734+00:00  | INFO     |   %SRC_DIR%>set "s2n=1.5.14"
+2025-08-14T14:35:29.021664+00:00  | INFO     |   
+2025-08-14T14:35:29.037311+00:00  | INFO     |   %SRC_DIR%>set "libutf8proc=2"
+2025-08-14T14:35:29.052921+00:00  | INFO     |   
+2025-08-14T14:35:29.068553+00:00  | INFO     |   %SRC_DIR%>set "clang_variant=clang"
+2025-08-14T14:35:29.095582+00:00  | INFO     |   
+2025-08-14T14:35:29.121426+00:00  | INFO     |   %SRC_DIR%>set "channel_targets=defaults"
+2025-08-14T14:35:29.150504+00:00  | INFO     |   
+2025-08-14T14:35:29.160594+00:00  | INFO     |   %SRC_DIR%>set "glpk=4.65"
+2025-08-14T14:35:29.176404+00:00  | INFO     |   
+2025-08-14T14:35:29.195461+00:00  | INFO     |   %SRC_DIR%>set "libgdal=3.11"
+2025-08-14T14:35:29.221411+00:00  | INFO     |   
+2025-08-14T14:35:29.237058+00:00  | INFO     |   %SRC_DIR%>set "ntbtls=0"
+2025-08-14T14:35:29.262238+00:00  | INFO     |   
+2025-08-14T14:35:29.27843+00:00   | INFO     |   %SRC_DIR%>set "serf=1.3"
+2025-08-14T14:35:29.295437+00:00  | INFO     |   
+2025-08-14T14:35:29.321472+00:00  | INFO     |   %SRC_DIR%>set "oniguruma=6.9"
+2025-08-14T14:35:29.337821+00:00  | INFO     |   
+2025-08-14T14:35:29.353421+00:00  | INFO     |   %SRC_DIR%>set "c_compiler=vs2019"
+2025-08-14T14:35:29.371359+00:00  | INFO     |   
+2025-08-14T14:35:29.373041+00:00  | INFO     |   %SRC_DIR%>set "libbrotlicommon=1.0"
+2025-08-14T14:35:29.394786+00:00  | INFO     |   
+2025-08-14T14:35:29.411299+00:00  | INFO     |   %SRC_DIR%>set "go_compiler_version=1.21"
+2025-08-14T14:35:29.437128+00:00  | INFO     |   
+2025-08-14T14:35:29.452757+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxau=1"
+2025-08-14T14:35:29.468375+00:00  | INFO     |   
+2025-08-14T14:35:29.48396+00:00   | INFO     |   %SRC_DIR%>set "pyqt=6.7"
+2025-08-14T14:35:29.495627+00:00  | INFO     |   
+2025-08-14T14:35:29.511961+00:00  | INFO     |   %SRC_DIR%>set "alsa_lib=1.2"
+2025-08-14T14:35:29.522211+00:00  | INFO     |   
+2025-08-14T14:35:29.537898+00:00  | INFO     |   %SRC_DIR%>set "libavif=1"
+2025-08-14T14:35:29.5542+00:00    | INFO     |   
+2025-08-14T14:35:29.569827+00:00  | INFO     |   %SRC_DIR%>set "python_impl=cpython"
+2025-08-14T14:35:29.596015+00:00  | INFO     |   
+2025-08-14T14:35:29.611563+00:00  | INFO     |   %SRC_DIR%>set "lame=3.100"
+2025-08-14T14:35:29.612722+00:00  | INFO     |   
+2025-08-14T14:35:29.638061+00:00  | INFO     |   %SRC_DIR%>set "nss=3"
+2025-08-14T14:35:29.653703+00:00  | INFO     |   
+2025-08-14T14:35:29.669307+00:00  | INFO     |   %SRC_DIR%>set "cyrus_sasl=2.1.28"
+2025-08-14T14:35:29.696351+00:00  | INFO     |   
+2025-08-14T14:35:29.722212+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxscrnsaver=1"
+2025-08-14T14:35:29.737848+00:00  | INFO     |   
+2025-08-14T14:35:29.753485+00:00  | INFO     |   %SRC_DIR%>set "orc=2.1.1"
+2025-08-14T14:35:29.769128+00:00  | INFO     |   
+2025-08-14T14:35:29.79477+00:00   | INFO     |   %SRC_DIR%>set "pcre2=10.42"
+2025-08-14T14:35:29.820692+00:00  | INFO     |   
+2025-08-14T14:35:29.836325+00:00  | INFO     |   %SRC_DIR%>set "gtk3=3"
+2025-08-14T14:35:29.851547+00:00  | INFO     |   
+2025-08-14T14:35:29.872432+00:00  | INFO     |   %SRC_DIR%>set "c_ares=1"
+2025-08-14T14:35:29.895317+00:00  | INFO     |   
+2025-08-14T14:35:29.921219+00:00  | INFO     |   %SRC_DIR%>set "aws_c_event_stream=0.5.5"
+2025-08-14T14:35:29.936855+00:00  | INFO     |   
+2025-08-14T14:35:29.952482+00:00  | INFO     |   %SRC_DIR%>set "khronos_opencl_icd_loader=2024.5.8"
+2025-08-14T14:35:29.978531+00:00  | INFO     |   
+2025-08-14T14:35:29.995424+00:00  | INFO     |   %SRC_DIR%>set "minizip=4"
+2025-08-14T14:35:30.021433+00:00  | INFO     |   
+2025-08-14T14:35:30.037068+00:00  | INFO     |   %SRC_DIR%>set "libspatialindex=1.9.3"
+2025-08-14T14:35:30.05268+00:00   | INFO     |   
+2025-08-14T14:35:30.068315+00:00  | INFO     |   %SRC_DIR%>set "suitesparse=7"
+2025-08-14T14:35:30.083493+00:00  | INFO     |   
+2025-08-14T14:35:30.111301+00:00  | INFO     |   %SRC_DIR%>set "gdk_pixbuf=2"
+2025-08-14T14:35:30.137889+00:00  | INFO     |   
+2025-08-14T14:35:30.152806+00:00  | INFO     |   %SRC_DIR%>set "zfp=1"
+2025-08-14T14:35:30.16049+00:00   | INFO     |   
+2025-08-14T14:35:30.176147+00:00  | INFO     |   %SRC_DIR%>set "glib=2"
+2025-08-14T14:35:30.195586+00:00  | INFO     |   
+2025-08-14T14:35:30.221491+00:00  | INFO     |   %SRC_DIR%>set "pyqtwebengine=6.7"
+2025-08-14T14:35:30.262665+00:00  | INFO     |   
+2025-08-14T14:35:30.279035+00:00  | INFO     |   %SRC_DIR%>set "libsodium=1.0.18"
+2025-08-14T14:35:30.29538+00:00   | INFO     |   
+2025-08-14T14:35:30.316229+00:00  | INFO     |   %SRC_DIR%>set "xcb_util_wm=0.4"
+2025-08-14T14:35:30.34338+00:00   | INFO     |   
+2025-08-14T14:35:30.359081+00:00  | INFO     |   %SRC_DIR%>set "openmpi=4.1"
+2025-08-14T14:35:30.376616+00:00  | INFO     |   
+2025-08-14T14:35:30.395573+00:00  | INFO     |   %SRC_DIR%>set "libuv=1"
+2025-08-14T14:35:30.421378+00:00  | INFO     |   
+2025-08-14T14:35:30.437021+00:00  | INFO     |   %SRC_DIR%>set "ptscotch=6.0.9"
+2025-08-14T14:35:30.452646+00:00  | INFO     |   
+2025-08-14T14:35:30.468255+00:00  | INFO     |   %SRC_DIR%>set "rdkit=2023.03.3"
+2025-08-14T14:35:30.478399+00:00  | INFO     |   
+2025-08-14T14:35:30.483972+00:00  | INFO     |   %SRC_DIR%>set "openssl=3"
+2025-08-14T14:35:30.505846+00:00  | INFO     |   
+2025-08-14T14:35:30.521508+00:00  | INFO     |   %SRC_DIR%>set "ceres_solver=2.2"
+2025-08-14T14:35:30.537135+00:00  | INFO     |   
+2025-08-14T14:35:30.552689+00:00  | INFO     |   %SRC_DIR%>set "libtensorflow=2.18.1"
+2025-08-14T14:35:30.577375+00:00  | INFO     |   
+2025-08-14T14:35:30.595736+00:00  | INFO     |   %SRC_DIR%>set "cfitsio=3.470"
+2025-08-14T14:35:30.605889+00:00  | INFO     |   
+2025-08-14T14:35:30.621624+00:00  | INFO     |   %SRC_DIR%>set "libxcb=1"
+2025-08-14T14:35:30.637261+00:00  | INFO     |   
+2025-08-14T14:35:30.652883+00:00  | INFO     |   %SRC_DIR%>set "libuuid=1"
+2025-08-14T14:35:30.66853+00:00   | INFO     |   
+2025-08-14T14:35:30.695504+00:00  | INFO     |   %SRC_DIR%>set "libarchive=3.7"
+2025-08-14T14:35:30.705574+00:00  | INFO     |   
+2025-08-14T14:35:30.721318+00:00  | INFO     |   %SRC_DIR%>set "sleef=3"
+2025-08-14T14:35:30.736973+00:00  | INFO     |   
+2025-08-14T14:35:30.752573+00:00  | INFO     |   %SRC_DIR%>set "gnutls=3.8"
+2025-08-14T14:35:30.768203+00:00  | INFO     |   
+2025-08-14T14:35:30.784013+00:00  | INFO     |   %SRC_DIR%>set "libvorbis=1"
+2025-08-14T14:35:30.811904+00:00  | INFO     |   
+2025-08-14T14:35:30.838073+00:00  | INFO     |   %SRC_DIR%>set "snappy=1"
+2025-08-14T14:35:30.853645+00:00  | INFO     |   
+2025-08-14T14:35:30.869268+00:00  | INFO     |   %SRC_DIR%>set "aws_c_common=0.12.3"
+2025-08-14T14:35:30.895573+00:00  | INFO     |   
+2025-08-14T14:35:30.905646+00:00  | INFO     |   %SRC_DIR%>set "mpfr=4"
+2025-08-14T14:35:30.921397+00:00  | INFO     |   
+2025-08-14T14:35:30.937032+00:00  | INFO     |   %SRC_DIR%>set "fftw=3.3"
+2025-08-14T14:35:30.95266+00:00   | INFO     |   
+2025-08-14T14:35:30.963284+00:00  | INFO     |   %SRC_DIR%>set "mpich=4"
+2025-08-14T14:35:30.978801+00:00  | INFO     |   
+2025-08-14T14:35:30.995685+00:00  | INFO     |   %SRC_DIR%>set "libmlir19=19.1"
+2025-08-14T14:35:31.021516+00:00  | INFO     |   
+2025-08-14T14:35:31.03714+00:00   | INFO     |   %SRC_DIR%>set "xcb_util_keysyms=0.4"
+2025-08-14T14:35:31.052766+00:00  | INFO     |   
+2025-08-14T14:35:31.078902+00:00  | INFO     |   %SRC_DIR%>set "mpc=1"
+2025-08-14T14:35:31.095426+00:00  | INFO     |   
+2025-08-14T14:35:31.121368+00:00  | INFO     |   %SRC_DIR%>set "openh264=2.6"
+2025-08-14T14:35:31.136995+00:00  | INFO     |   
+2025-08-14T14:35:31.152611+00:00  | INFO     |   %SRC_DIR%>set "libbrotlienc=1.0"
+2025-08-14T14:35:31.177099+00:00  | INFO     |   
+2025-08-14T14:35:31.195745+00:00  | INFO     |   %SRC_DIR%>set "fortran_compiler_version=2022.1.0"
+2025-08-14T14:35:31.221564+00:00  | INFO     |   
+2025-08-14T14:35:31.237195+00:00  | INFO     |   %SRC_DIR%>set "epoxy=1.5"
+2025-08-14T14:35:31.250783+00:00  | INFO     |   
+2025-08-14T14:35:31.263119+00:00  | INFO     |   %SRC_DIR%>set "libgit2=1.6"
+2025-08-14T14:35:31.278589+00:00  | INFO     |   
+2025-08-14T14:35:31.293684+00:00  | INFO     |   %SRC_DIR%>set "libde265=1.0.15"
+2025-08-14T14:35:31.316189+00:00  | INFO     |   
+2025-08-14T14:35:31.326269+00:00  | INFO     |   %SRC_DIR%>set "blas_impl=mkl"
+2025-08-14T14:35:31.34203+00:00   | INFO     |   
+2025-08-14T14:35:31.357654+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxfixes=6"
+2025-08-14T14:35:31.375833+00:00  | INFO     |   
+2025-08-14T14:35:31.3946+00:00    | INFO     |   %SRC_DIR%>set "wayland=1.24"
+2025-08-14T14:35:31.410943+00:00  | INFO     |   
+2025-08-14T14:35:31.43679+00:00   | INFO     |   %SRC_DIR%>set "libaec=1"
+2025-08-14T14:35:31.452423+00:00  | INFO     |   
+2025-08-14T14:35:31.468049+00:00  | INFO     |   %SRC_DIR%>set "aws_crt_cpp=0.32.10"
+2025-08-14T14:35:31.47873+00:00   | INFO     |   
+2025-08-14T14:35:31.483605+00:00  | INFO     |   %SRC_DIR%>set "glew=2.2"
+2025-08-14T14:35:31.512416+00:00  | INFO     |   
+2025-08-14T14:35:31.527512+00:00  | INFO     |   %SRC_DIR%>set "libwebp=1.3.2"
+2025-08-14T14:35:31.529107+00:00  | INFO     |   
+2025-08-14T14:35:31.555295+00:00  | INFO     |   %SRC_DIR%>set "dav1d=1.2.1"
+2025-08-14T14:35:31.570867+00:00  | INFO     |   
+2025-08-14T14:35:31.595385+00:00  | INFO     |   %SRC_DIR%>set "capnproto=1.1.0"
+2025-08-14T14:35:31.62136+00:00   | INFO     |   
+2025-08-14T14:35:31.636987+00:00  | INFO     |   %SRC_DIR%>set "libev=4.33"
+2025-08-14T14:35:31.652618+00:00  | INFO     |   
+2025-08-14T14:35:31.668244+00:00  | INFO     |   %SRC_DIR%>set "pugixml=1.11"
+2025-08-14T14:35:31.695542+00:00  | INFO     |   
+2025-08-14T14:35:31.72159+00:00   | INFO     |   %SRC_DIR%>set "brotli=1"
+2025-08-14T14:35:31.73722+00:00   | INFO     |   
+2025-08-14T14:35:31.752858+00:00  | INFO     |   %SRC_DIR%>set "nccl=2"
+2025-08-14T14:35:31.755892+00:00  | INFO     |   
+2025-08-14T14:35:31.768627+00:00  | INFO     |   %SRC_DIR%>set "libgrpc=1.71"
+2025-08-14T14:35:31.778838+00:00  | INFO     |   
+2025-08-14T14:35:31.795146+00:00  | INFO     |   %SRC_DIR%>set "flatbuffers=25.2.10"
+2025-08-14T14:35:31.821339+00:00  | INFO     |   
+2025-08-14T14:35:31.830515+00:00  | INFO     |   %SRC_DIR%>set "python_igraph=0.10"
+2025-08-14T14:35:31.841137+00:00  | INFO     |   
+2025-08-14T14:35:31.853713+00:00  | INFO     |   %SRC_DIR%>set "libpciaccess=0.18"
+2025-08-14T14:35:31.86947+00:00   | INFO     |   
+2025-08-14T14:35:31.895742+00:00  | INFO     |   %SRC_DIR%>set "vc=14"
+2025-08-14T14:35:31.921661+00:00  | INFO     |   
+2025-08-14T14:35:31.937359+00:00  | INFO     |   %SRC_DIR%>set "libffi=3.4"
+2025-08-14T14:35:31.952922+00:00  | INFO     |   
+2025-08-14T14:35:31.978976+00:00  | INFO     |   %SRC_DIR%>set "zlib_ng=2.0"
+2025-08-14T14:35:31.994642+00:00  | INFO     |   
+2025-08-14T14:35:32.017618+00:00  | INFO     |   %SRC_DIR%>set "boost_cpp=1.82"
+2025-08-14T14:35:32.027704+00:00  | INFO     |   
+2025-08-14T14:35:32.043472+00:00  | INFO     |   %SRC_DIR%>set "libosqp=0.6.3"
+2025-08-14T14:35:32.059114+00:00  | INFO     |   
+2025-08-14T14:35:32.074719+00:00  | INFO     |   %SRC_DIR%>set "libprotobuf=5.29.3"
+2025-08-14T14:35:32.092823+00:00  | INFO     |   
+2025-08-14T14:35:32.111172+00:00  | INFO     |   %SRC_DIR%>set "npth=1"
+2025-08-14T14:35:32.121245+00:00  | INFO     |   
+2025-08-14T14:35:32.136998+00:00  | INFO     |   %SRC_DIR%>set "libaio=0.3"
+2025-08-14T14:35:32.152633+00:00  | INFO     |   
+2025-08-14T14:35:32.160813+00:00  | INFO     |   %SRC_DIR%>set "fmt=9"
+2025-08-14T14:35:32.177108+00:00  | INFO     |   
+2025-08-14T14:35:32.195551+00:00  | INFO     |   %SRC_DIR%>set "libnghttp2=1"
+2025-08-14T14:35:32.221514+00:00  | INFO     |   
+2025-08-14T14:35:32.227939+00:00  | INFO     |   %SRC_DIR%>set "jsoncpp=1.9.6"
+2025-08-14T14:35:32.236694+00:00  | INFO     |   
+2025-08-14T14:35:32.252206+00:00  | INFO     |   %SRC_DIR%>set "libiconv=1"
+2025-08-14T14:35:32.278824+00:00  | INFO     |   
+2025-08-14T14:35:32.295628+00:00  | INFO     |   %SRC_DIR%>set "mkl=2023"
+2025-08-14T14:35:32.321451+00:00  | INFO     |   
+2025-08-14T14:35:32.337087+00:00  | INFO     |   %SRC_DIR%>set "unixodbc=2.3"
+2025-08-14T14:35:32.352713+00:00  | INFO     |   
+2025-08-14T14:35:32.358886+00:00  | INFO     |   %SRC_DIR%>set "c_stdlib=vs"
+2025-08-14T14:35:32.376539+00:00  | INFO     |   
+2025-08-14T14:35:32.395485+00:00  | INFO     |   %SRC_DIR%>set "gts=0.7"
+2025-08-14T14:35:32.421337+00:00  | INFO     |   
+2025-08-14T14:35:32.43698+00:00   | INFO     |   %SRC_DIR%>set "lmdb=0"
+2025-08-14T14:35:32.452622+00:00  | INFO     |   
+2025-08-14T14:35:32.467813+00:00  | INFO     |   %SRC_DIR%>set "graphite2=1"
+2025-08-14T14:35:32.48342+00:00   | INFO     |   
+2025-08-14T14:35:32.511991+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxi=1"
+2025-08-14T14:35:32.537932+00:00  | INFO     |   
+2025-08-14T14:35:32.539511+00:00  | INFO     |   %SRC_DIR%>set "coin_or_utils=2.11"
+2025-08-14T14:35:32.556111+00:00  | INFO     |   
+2025-08-14T14:35:32.571734+00:00  | INFO     |   %SRC_DIR%>set "libabseil=20250127.0"
+2025-08-14T14:35:32.595452+00:00  | INFO     |   
+2025-08-14T14:35:32.62139+00:00   | INFO     |   %SRC_DIR%>set "xorg_libxshmfence=1"
+2025-08-14T14:35:32.637033+00:00  | INFO     |   
+2025-08-14T14:35:32.652663+00:00  | INFO     |   %SRC_DIR%>set "libdap4=3.19"
+2025-08-14T14:35:32.668279+00:00  | INFO     |   
+2025-08-14T14:35:32.678444+00:00  | INFO     |   %SRC_DIR%>set "mesalib=25.1"
+2025-08-14T14:35:32.683588+00:00  | INFO     |   
+2025-08-14T14:35:32.698766+00:00  | INFO     |   %SRC_DIR%>set "fontconfig=2"
+2025-08-14T14:35:32.70035+00:00   | INFO     |   
+2025-08-14T14:35:32.724889+00:00  | INFO     |   %SRC_DIR%>set "sqlite=3"
+2025-08-14T14:35:32.740499+00:00  | INFO     |   
+2025-08-14T14:35:32.756107+00:00  | INFO     |   %SRC_DIR%>set "cgo_compiler_version=1.21"
+2025-08-14T14:35:32.771743+00:00  | INFO     |   
+2025-08-14T14:35:32.795501+00:00  | INFO     |   %SRC_DIR%>set "mbedtls=3.5"
+2025-08-14T14:35:32.82147+00:00   | INFO     |   
+2025-08-14T14:35:32.843917+00:00  | INFO     |   %SRC_DIR%>set "ncurses=6"
+2025-08-14T14:35:32.860206+00:00  | INFO     |   
+2025-08-14T14:35:32.87546+00:00   | INFO     |   %SRC_DIR%>set "python_implementation=cpython"
+2025-08-14T14:35:32.895405+00:00  | INFO     |   
+2025-08-14T14:35:32.921206+00:00  | INFO     |   %SRC_DIR%>set "ucrt64_fortran_compiler=ucrt64-gcc-toolchain"
+2025-08-14T14:35:32.936378+00:00  | INFO     |   
+2025-08-14T14:35:32.964558+00:00  | INFO     |   %SRC_DIR%>set "libtasn1=4"
+2025-08-14T14:35:32.982659+00:00  | INFO     |   
+2025-08-14T14:35:32.99549+00:00   | INFO     |   %SRC_DIR%>set "libunistring=0"
+2025-08-14T14:35:33.005607+00:00  | INFO     |   
+2025-08-14T14:35:33.021375+00:00  | INFO     |   %SRC_DIR%>set "spdlog=1"
+2025-08-14T14:35:33.037004+00:00  | INFO     |   
+2025-08-14T14:35:33.052618+00:00  | INFO     |   %SRC_DIR%>set "brunsli=0"
+2025-08-14T14:35:33.068248+00:00  | INFO     |   
+2025-08-14T14:35:33.095786+00:00  | INFO     |   %SRC_DIR%>set "azure_identity_cpp=1.10.1"
+2025-08-14T14:35:33.12232+00:00   | INFO     |   
+2025-08-14T14:35:33.137963+00:00  | INFO     |   %SRC_DIR%>set "c_blosc2=2.17"
+2025-08-14T14:35:33.153581+00:00  | INFO     |   
+2025-08-14T14:35:33.169215+00:00  | INFO     |   %SRC_DIR%>set "at_spi2_core=2.36"
+2025-08-14T14:35:33.195688+00:00  | INFO     |   
+2025-08-14T14:35:33.205743+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxdamage=1"
+2025-08-14T14:35:33.22148+00:00   | INFO     |   
+2025-08-14T14:35:33.246368+00:00  | INFO     |   %SRC_DIR%>set "libpq=17"
+2025-08-14T14:35:33.26453+00:00   | INFO     |   
+2025-08-14T14:35:33.282467+00:00  | INFO     |   %SRC_DIR%>set "yaml=0.2"
+2025-08-14T14:35:33.305774+00:00  | INFO     |   
+2025-08-14T14:35:33.321528+00:00  | INFO     |   %SRC_DIR%>set "tk=8.6"
+2025-08-14T14:35:33.337161+00:00  | INFO     |   
+2025-08-14T14:35:33.352779+00:00  | INFO     |   %SRC_DIR%>set "lcms2=2"
+2025-08-14T14:35:33.367974+00:00  | INFO     |   
+2025-08-14T14:35:33.39459+00:00   | INFO     |   %SRC_DIR%>set "freetds=1"
+2025-08-14T14:35:33.412201+00:00  | INFO     |   
+2025-08-14T14:35:33.43844+00:00   | INFO     |   %SRC_DIR%>set "azure_storage_common_cpp=12.10.0"
+2025-08-14T14:35:33.45407+00:00   | INFO     |   
+2025-08-14T14:35:33.4697+00:00    | INFO     |   %SRC_DIR%>set "xorg_libice=1"
+2025-08-14T14:35:33.478882+00:00  | INFO     |   
+2025-08-14T14:35:33.4955+00:00    | INFO     |   %SRC_DIR%>set "VERBOSE_AT=V=1"
+2025-08-14T14:35:33.521539+00:00  | INFO     |   
+2025-08-14T14:35:33.540184+00:00  | INFO     |   %SRC_DIR%>set "xorg_libx11=1"
+2025-08-14T14:35:33.556507+00:00  | INFO     |   
+2025-08-14T14:35:33.57216+00:00   | INFO     |   %SRC_DIR%>set "cuda_compiler_version=12.4"
+2025-08-14T14:35:33.595622+00:00  | INFO     |   
+2025-08-14T14:35:33.621534+00:00  | INFO     |   %SRC_DIR%>set "backtrace=20241216"
+2025-08-14T14:35:33.637215+00:00  | INFO     |   
+2025-08-14T14:35:33.646307+00:00  | INFO     |   %SRC_DIR%>set "rust_gnu_compiler_version=1.87.0"
+2025-08-14T14:35:33.652467+00:00  | INFO     |   
+2025-08-14T14:35:33.673434+00:00  | INFO     |   %SRC_DIR%>set "coin_or_osi=0.108"
+2025-08-14T14:35:33.695437+00:00  | INFO     |   
+2025-08-14T14:35:33.721245+00:00  | INFO     |   %SRC_DIR%>set "scotch=6.0.9"
+2025-08-14T14:35:33.736886+00:00  | INFO     |   
+2025-08-14T14:35:33.75251+00:00   | INFO     |   %SRC_DIR%>set "libflac=1.4"
+2025-08-14T14:35:33.76819+00:00   | INFO     |   
+2025-08-14T14:35:33.795077+00:00  | INFO     |   %SRC_DIR%>set "boost=1.82"
+2025-08-14T14:35:33.821386+00:00  | INFO     |   
+2025-08-14T14:35:33.837024+00:00  | INFO     |   %SRC_DIR%>set "cairo=1"
+2025-08-14T14:35:33.852643+00:00  | INFO     |   
+2025-08-14T14:35:33.873453+00:00  | INFO     |   %SRC_DIR%>set "eigen=3.3.7"
+2025-08-14T14:35:33.889833+00:00  | INFO     |   
+2025-08-14T14:35:33.911389+00:00  | INFO     |   %SRC_DIR%>set "libapr=1"
+2025-08-14T14:35:33.927665+00:00  | INFO     |   
+2025-08-14T14:35:33.943314+00:00  | INFO     |   %SRC_DIR%>set "libcurl=8"
+2025-08-14T14:35:33.958918+00:00  | INFO     |   
+2025-08-14T14:35:33.979027+00:00  | INFO     |   %SRC_DIR%>set "libvpx=1.13"
+2025-08-14T14:35:33.995472+00:00  | INFO     |   
+2025-08-14T14:35:34.01186+00:00   | INFO     |   %SRC_DIR%>set "xorg_libxxf86vm=1"
+2025-08-14T14:35:34.027496+00:00  | INFO     |   
+2025-08-14T14:35:34.043124+00:00  | INFO     |   %SRC_DIR%>set "xcb_util_renderutil=0.3"
+2025-08-14T14:35:34.058746+00:00  | INFO     |   
+2025-08-14T14:35:34.074364+00:00  | INFO     |   %SRC_DIR%>set "coin_or_clp=1.17"
+2025-08-14T14:35:34.095394+00:00  | INFO     |   
+2025-08-14T14:35:34.109601+00:00  | INFO     |   %SRC_DIR%>set "libhiredis=1.3"
+2025-08-14T14:35:34.110857+00:00  | INFO     |   
+2025-08-14T14:35:34.136664+00:00  | INFO     |   %SRC_DIR%>set "aws_checksums=0.2.7"
+2025-08-14T14:35:34.152297+00:00  | INFO     |   
+2025-08-14T14:35:34.17621+00:00   | INFO     |   %SRC_DIR%>set "libqdldl=0.1.7"
+2025-08-14T14:35:34.195432+00:00  | INFO     |   
+2025-08-14T14:35:34.211162+00:00  | INFO     |   %SRC_DIR%>set "charls=2.2"
+2025-08-14T14:35:34.226798+00:00  | INFO     |   
+2025-08-14T14:35:34.242414+00:00  | INFO     |   %SRC_DIR%>set "pango=1"
+2025-08-14T14:35:34.265068+00:00  | INFO     |   
+2025-08-14T14:35:34.282541+00:00  | INFO     |   %SRC_DIR%>set "libgcrypt=1"
+2025-08-14T14:35:34.303973+00:00  | INFO     |   
+2025-08-14T14:35:34.320279+00:00  | INFO     |   %SRC_DIR%>set "lzo=2"
+2025-08-14T14:35:34.335906+00:00  | INFO     |   
+2025-08-14T14:35:34.351066+00:00  | INFO     |   %SRC_DIR%>set "py_lief=0.16"
+2025-08-14T14:35:34.37604+00:00   | INFO     |   
+2025-08-14T14:35:34.391286+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxcomposite=0"
+2025-08-14T14:35:34.420347+00:00  | INFO     |   
+2025-08-14T14:35:34.436633+00:00  | INFO     |   %SRC_DIR%>set "libssh2=1"
+2025-08-14T14:35:34.452262+00:00  | INFO     |   
+2025-08-14T14:35:34.467885+00:00  | INFO     |   %SRC_DIR%>set "qhull=2020.2"
+2025-08-14T14:35:34.48362+00:00   | INFO     |   
+2025-08-14T14:35:34.512198+00:00  | INFO     |   %SRC_DIR%>set "libebm=0.4.4"
+2025-08-14T14:35:34.528481+00:00  | INFO     |   
+2025-08-14T14:35:34.557028+00:00  | INFO     |   %SRC_DIR%>set "arrow_cpp=19.0.0"
+2025-08-14T14:35:34.572666+00:00  | INFO     |   
+2025-08-14T14:35:34.588641+00:00  | INFO     |   %SRC_DIR%>set "re2=2024"
+2025-08-14T14:35:34.595285+00:00  | INFO     |   
+2025-08-14T14:35:34.611111+00:00  | INFO     |   %SRC_DIR%>set "jpeg=9e"
+2025-08-14T14:35:34.627391+00:00  | INFO     |   
+2025-08-14T14:35:34.643032+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxinerama=1.1"
+2025-08-14T14:35:34.658656+00:00  | INFO     |   
+2025-08-14T14:35:34.674285+00:00  | INFO     |   %SRC_DIR%>set "r_base=4.3.1"
+2025-08-14T14:35:34.695758+00:00  | INFO     |   
+2025-08-14T14:35:34.711408+00:00  | INFO     |   %SRC_DIR%>set "libnetcdf=4"
+2025-08-14T14:35:34.727047+00:00  | INFO     |   
+2025-08-14T14:35:34.742686+00:00  | INFO     |   %SRC_DIR%>set "rust_gnu_compiler=rust-gnu"
+2025-08-14T14:35:34.758301+00:00  | INFO     |   
+2025-08-14T14:35:34.773925+00:00  | INFO     |   %SRC_DIR%>set "libedit=3.1"
+2025-08-14T14:35:34.795403+00:00  | INFO     |   
+2025-08-14T14:35:34.810787+00:00  | INFO     |   %SRC_DIR%>set "xorg_xorgproto=2024"
+2025-08-14T14:35:34.835305+00:00  | INFO     |   
+2025-08-14T14:35:34.850926+00:00  | INFO     |   %SRC_DIR%>set "cross_compiler_target_platform=win-64"
+2025-08-14T14:35:34.866565+00:00  | INFO     |   
+2025-08-14T14:35:34.882737+00:00  | INFO     |   %SRC_DIR%>set "g2clib=1.6"
+2025-08-14T14:35:34.911448+00:00  | INFO     |   
+2025-08-14T14:35:34.927751+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxft=2"
+2025-08-14T14:35:34.94338+00:00   | INFO     |   
+2025-08-14T14:35:34.958998+00:00  | INFO     |   %SRC_DIR%>set "libopenblas=0"
+2025-08-14T14:35:34.978729+00:00  | INFO     |   
+2025-08-14T14:35:34.982431+00:00  | INFO     |   %SRC_DIR%>set "ucrt64_cxx_compiler=ucrt64-gcc-toolchain"
+2025-08-14T14:35:34.995558+00:00  | INFO     |   
+2025-08-14T14:35:35.011235+00:00  | INFO     |   %SRC_DIR%>set "openblas=0"
+2025-08-14T14:35:35.02685+00:00   | INFO     |   
+2025-08-14T14:35:35.042207+00:00  | INFO     |   %SRC_DIR%>set "hdfeos5=5.1"
+2025-08-14T14:35:35.066652+00:00  | INFO     |   
+2025-08-14T14:35:35.082571+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxrandr=1"
+2025-08-14T14:35:35.112124+00:00  | INFO     |   
+2025-08-14T14:35:35.12782+00:00   | INFO     |   %SRC_DIR%>set "libzopfli=1.0"
+2025-08-14T14:35:35.143378+00:00  | INFO     |   
+2025-08-14T14:35:35.158998+00:00  | INFO     |   %SRC_DIR%>set "libxmlsec1=1.3"
+2025-08-14T14:35:35.160707+00:00  | INFO     |   
+2025-08-14T14:35:35.176636+00:00  | INFO     |   %SRC_DIR%>set "liblief=0.16"
+2025-08-14T14:35:35.195678+00:00  | INFO     |   
+2025-08-14T14:35:35.211953+00:00  | INFO     |   %SRC_DIR%>set "libtmglib=3"
+2025-08-14T14:35:35.227594+00:00  | INFO     |   
+2025-08-14T14:35:35.243248+00:00  | INFO     |   %SRC_DIR%>set "rust_compiler=rust"
+2025-08-14T14:35:35.265767+00:00  | INFO     |   
+2025-08-14T14:35:35.282055+00:00  | INFO     |   %SRC_DIR%>set "aws_c_sdkutils=0.2.4"
+2025-08-14T14:35:35.31112+00:00   | INFO     |   
+2025-08-14T14:35:35.327438+00:00  | INFO     |   %SRC_DIR%>set "quantlib=1"
+2025-08-14T14:35:35.343067+00:00  | INFO     |   
+2025-08-14T14:35:35.358701+00:00  | INFO     |   %SRC_DIR%>set "qpdf=11"
+2025-08-14T14:35:35.374316+00:00  | INFO     |   
+2025-08-14T14:35:35.389935+00:00  | INFO     |   %SRC_DIR%>set "xorg_libsm=1"
+2025-08-14T14:35:35.405562+00:00  | INFO     |   
+2025-08-14T14:35:35.421188+00:00  | INFO     |   %SRC_DIR%>set "gettext=0"
+2025-08-14T14:35:35.43682+00:00   | INFO     |   
+2025-08-14T14:35:35.452448+00:00  | INFO     |   %SRC_DIR%>set "reproc_cpp=14.2"
+2025-08-14T14:35:35.46807+00:00   | INFO     |   
+2025-08-14T14:35:35.48363+00:00   | INFO     |   %SRC_DIR%>set "xorg_libxrender=0.9"
+2025-08-14T14:35:35.512211+00:00  | INFO     |   
+2025-08-14T14:35:35.540833+00:00  | INFO     |   %SRC_DIR%>set "libgdal_core=3.11"
+2025-08-14T14:35:35.55729+00:00   | INFO     |   
+2025-08-14T14:35:35.572922+00:00  | INFO     |   %SRC_DIR%>set "gtest=1.14.0"
+2025-08-14T14:35:35.595652+00:00  | INFO     |   
+2025-08-14T14:35:35.612952+00:00  | INFO     |   %SRC_DIR%>set "krb5=1.21"
+2025-08-14T14:35:35.628591+00:00  | INFO     |   
+2025-08-14T14:35:35.644221+00:00  | INFO     |   %SRC_DIR%>set "yaml_cpp=0.8"
+2025-08-14T14:35:35.65989+00:00   | INFO     |   
+2025-08-14T14:35:35.675463+00:00  | INFO     |   %SRC_DIR%>set "libaprutil=1"
+2025-08-14T14:35:35.695727+00:00  | INFO     |   
+2025-08-14T14:35:35.714592+00:00  | INFO     |   %SRC_DIR%>set "tiledb=2.26"
+2025-08-14T14:35:35.730227+00:00  | INFO     |   
+2025-08-14T14:35:35.745851+00:00  | INFO     |   %SRC_DIR%>set "libassuan=3"
+2025-08-14T14:35:35.761212+00:00  | INFO     |   
+2025-08-14T14:35:35.762524+00:00  | INFO     |   %SRC_DIR%>set "hdf5=1.14.5"
+2025-08-14T14:35:35.778981+00:00  | INFO     |   
+2025-08-14T14:35:35.794972+00:00  | INFO     |   %SRC_DIR%>set "go_compiler=go-nocgo"
+2025-08-14T14:35:35.816107+00:00  | INFO     |   
+2025-08-14T14:35:35.831743+00:00  | INFO     |   %SRC_DIR%>set "libjpeg_turbo=3"
+2025-08-14T14:35:35.847363+00:00  | INFO     |   
+2025-08-14T14:35:35.869796+00:00  | INFO     |   %SRC_DIR%>set "gcab=1"
+2025-08-14T14:35:35.895786+00:00  | INFO     |   
+2025-08-14T14:35:35.921615+00:00  | INFO     |   %SRC_DIR%>set "icu=73"
+2025-08-14T14:35:35.937252+00:00  | INFO     |   
+2025-08-14T14:35:35.952874+00:00  | INFO     |   %SRC_DIR%>set "lz4_c=1.9"
+2025-08-14T14:35:35.979138+00:00  | INFO     |   
+2025-08-14T14:35:35.994235+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxt=1"
+2025-08-14T14:35:35.995673+00:00  | INFO     |   
+2025-08-14T14:35:36.021173+00:00  | INFO     |   %SRC_DIR%>set "glslang=15"
+2025-08-14T14:35:36.036815+00:00  | INFO     |   
+2025-08-14T14:35:36.052433+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxtst=1"
+2025-08-14T14:35:36.068053+00:00  | INFO     |   
+2025-08-14T14:35:36.095657+00:00  | INFO     |   %SRC_DIR%>set "libmpdecxx=4"
+2025-08-14T14:35:36.105813+00:00  | INFO     |   
+2025-08-14T14:35:36.121577+00:00  | INFO     |   %SRC_DIR%>set "pytorch=2.6"
+2025-08-14T14:35:36.137203+00:00  | INFO     |   
+2025-08-14T14:35:36.152827+00:00  | INFO     |   %SRC_DIR%>set "libsndfile=1.2"
+2025-08-14T14:35:36.176817+00:00  | INFO     |   
+2025-08-14T14:35:36.178451+00:00  | INFO     |   %SRC_DIR%>set "libpng=1.6"
+2025-08-14T14:35:36.195815+00:00  | INFO     |   
+2025-08-14T14:35:36.221794+00:00  | INFO     |   %SRC_DIR%>set "xcb_util=0.4"
+2025-08-14T14:35:36.249447+00:00  | INFO     |   
+2025-08-14T14:35:36.254035+00:00  | INFO     |   %SRC_DIR%>set "jxrlib=1.1"
+2025-08-14T14:35:36.266129+00:00  | INFO     |   
+2025-08-14T14:35:36.28255+00:00   | INFO     |   %SRC_DIR%>set "aws_c_s3=0.8.3"
+2025-08-14T14:35:36.311114+00:00  | INFO     |   
+2025-08-14T14:35:36.327413+00:00  | INFO     |   %SRC_DIR%>set "gst_plugins_base=1.24"
+2025-08-14T14:35:36.34304+00:00   | INFO     |   
+2025-08-14T14:35:36.358748+00:00  | INFO     |   %SRC_DIR%>set "libpcap=1.10"
+2025-08-14T14:35:36.375699+00:00  | INFO     |   
+2025-08-14T14:35:36.395669+00:00  | INFO     |   %SRC_DIR%>set "ucrt64_c_compiler=ucrt64-gcc-toolchain"
+2025-08-14T14:35:36.421566+00:00  | INFO     |   
+2025-08-14T14:35:36.437204+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxdmcp=1"
+2025-08-14T14:35:36.452823+00:00  | INFO     |   
+2025-08-14T14:35:36.468033+00:00  | INFO     |   %SRC_DIR%>set "ruby=3.2"
+2025-08-14T14:35:36.48334+00:00   | INFO     |   
+2025-08-14T14:35:36.512733+00:00  | INFO     |   %SRC_DIR%>set "openldap=2.6"
+2025-08-14T14:35:36.529058+00:00  | INFO     |   
+2025-08-14T14:35:36.557658+00:00  | INFO     |   %SRC_DIR%>set "r_version=4.3.1"
+2025-08-14T14:35:36.573349+00:00  | INFO     |   
+2025-08-14T14:35:36.595413+00:00  | INFO     |   %SRC_DIR%>set "bzip2=1"
+2025-08-14T14:35:36.611073+00:00  | INFO     |   
+2025-08-14T14:35:36.626698+00:00  | INFO     |   %SRC_DIR%>set "nettle=3.7"
+2025-08-14T14:35:36.642323+00:00  | INFO     |   
+2025-08-14T14:35:36.657949+00:00  | INFO     |   %SRC_DIR%>set "hdf4=4.2.13"
+2025-08-14T14:35:36.673573+00:00  | INFO     |   
+2025-08-14T14:35:36.69569+00:00   | INFO     |     Running command Building wheel for pythonanywhere-core (pyproject.toml)
+2025-08-14T14:35:36.710821+00:00  | INFO     |     The "poetry.dev-dependencies" section is deprecated and will be removed in a future version. Use "poetry.group.dev.dependencies" instead.
+2025-08-14T14:35:36.726557+00:00  | INFO     |   Indexing ['win-64'] does not include 'noarch'
+2025-08-14T14:35:36.742182+00:00  | INFO     |   
+2025-08-14T14:35:36.757814+00:00  | INFO     |   Indexing ['win-64'] does not include 'noarch'
+2025-08-14T14:35:36.773453+00:00  | INFO     |   
+2025-08-14T14:35:36.795681+00:00  | INFO     |   %SRC_DIR%>set "libtensorflow_cc=2.18.1"
+2025-08-14T14:35:36.811976+00:00  | INFO     |   
+2025-08-14T14:35:36.827618+00:00  | INFO     |   %SRC_DIR%>set "cgo_compiler=go-cgo"
+2025-08-14T14:35:36.849346+00:00  | INFO     |   
+2025-08-14T14:35:36.865636+00:00  | INFO     |   %SRC_DIR%>set "libtorch=2.6"
+2025-08-14T14:35:36.882456+00:00  | INFO     |   
+2025-08-14T14:35:36.911461+00:00  | INFO     |   %SRC_DIR%>set "cpu_optimization_target=nocona"
+2025-08-14T14:35:36.927734+00:00  | INFO     |   
+2025-08-14T14:35:36.942937+00:00  | INFO     |   %SRC_DIR%>set "gstreamer=1.24"
+2025-08-14T14:35:36.961736+00:00  | INFO     |   
+2025-08-14T14:35:36.97872+00:00   | INFO     |   %SRC_DIR%>set "VERBOSE_CM=VERBOSE=1"
+2025-08-14T14:35:36.99593+00:00   | INFO     |   
+2025-08-14T14:35:37.012219+00:00  | INFO     |   %SRC_DIR%>set "m2w64_fortran_compiler=m2w64-toolchain"
+2025-08-14T14:35:37.02787+00:00   | INFO     |   
+2025-08-14T14:35:37.043472+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxext=1"
+2025-08-14T14:35:37.059105+00:00  | INFO     |   
+2025-08-14T14:35:37.074737+00:00  | INFO     |   %SRC_DIR%>set "getopt_win32=0.1"
+2025-08-14T14:35:37.095666+00:00  | INFO     |   
+2025-08-14T14:35:37.112005+00:00  | INFO     |   %SRC_DIR%>set "libopengl=1"
+2025-08-14T14:35:37.127631+00:00  | INFO     |   
+2025-08-14T14:35:37.143296+00:00  | INFO     |   %SRC_DIR%>set "zstd=1.5"
+2025-08-14T14:35:37.158887+00:00  | INFO     |   
+2025-08-14T14:35:37.160455+00:00  | INFO     |   %SRC_DIR%>set "vtk_io_ffmpeg=9.4.1"
+2025-08-14T14:35:37.176821+00:00  | INFO     |   
+2025-08-14T14:35:37.192541+00:00  | INFO     |   %SRC_DIR%>set "freetype=2"
+2025-08-14T14:35:37.212113+00:00  | INFO     |   
+2025-08-14T14:35:37.228412+00:00  | INFO     |   %SRC_DIR%>set "libnsl=2.0"
+2025-08-14T14:35:37.244037+00:00  | INFO     |   
+2025-08-14T14:35:37.266686+00:00  | INFO     |   %SRC_DIR%>set "openjpeg=2"
+2025-08-14T14:35:37.282588+00:00  | INFO     |   
+2025-08-14T14:35:37.311768+00:00  | INFO     |   %SRC_DIR%>set "aws_c_cal=0.9.2"
+2025-08-14T14:35:37.327353+00:00  | INFO     |   
+2025-08-14T14:35:37.342971+00:00  | INFO     |   %SRC_DIR%>set "libheif=1.19"
+2025-08-14T14:35:37.358609+00:00  | INFO     |   
+2025-08-14T14:35:37.375901+00:00  | INFO     |   %SRC_DIR%>set "aom=3.6"
+2025-08-14T14:35:37.394845+00:00  | INFO     |   
+2025-08-14T14:35:37.411232+00:00  | INFO     |   %SRC_DIR%>set "spdlog_fmt_embed=1"
+2025-08-14T14:35:37.426412+00:00  | INFO     |   
+2025-08-14T14:35:37.428322+00:00  | INFO     |   %SRC_DIR%>set "igraph=0.10"
+2025-08-14T14:35:37.445334+00:00  | INFO     |   
+2025-08-14T14:35:37.460967+00:00  | INFO     |   %SRC_DIR%>set "aws_c_auth=0.9.0"
+2025-08-14T14:35:37.476596+00:00  | INFO     |   
+2025-08-14T14:35:37.478741+00:00  | INFO     |   %SRC_DIR%>set "libegl=1"
+2025-08-14T14:35:37.495716+00:00  | INFO     |   
+2025-08-14T14:35:37.512653+00:00  | INFO     |   %SRC_DIR%>set "cutensor=2"
+2025-08-14T14:35:37.528298+00:00  | INFO     |   
+2025-08-14T14:35:37.558388+00:00  | INFO     |   %SRC_DIR%>set "fribidi=1"
+2025-08-14T14:35:37.574019+00:00  | INFO     |   
+2025-08-14T14:35:37.595501+00:00  | INFO     |   %SRC_DIR%>set "geotiff=1.7"
+2025-08-14T14:35:37.611305+00:00  | INFO     |   
+2025-08-14T14:35:37.626913+00:00  | INFO     |   %SRC_DIR%>set "gmp=6"
+2025-08-14T14:35:37.642533+00:00  | INFO     |   
+2025-08-14T14:35:37.658159+00:00  | INFO     |   %SRC_DIR%>set "level_zero=1"
+2025-08-14T14:35:37.673791+00:00  | INFO     |   
+2025-08-14T14:35:37.674922+00:00  | INFO     |   %SRC_DIR%>set "jasper=4"
+2025-08-14T14:35:37.695707+00:00  | INFO     |   
+2025-08-14T14:35:37.711362+00:00  | INFO     |   %SRC_DIR%>set "leptonica=1.82"
+2025-08-14T14:35:37.727+00:00     | INFO     |   
+2025-08-14T14:35:37.742626+00:00  | INFO     |   %SRC_DIR%>set "libtheora=1"
+2025-08-14T14:35:37.758252+00:00  | INFO     |   
+2025-08-14T14:35:37.773873+00:00  | INFO     |   %SRC_DIR%>set "libopus=1"
+2025-08-14T14:35:37.794926+00:00  | INFO     |   
+2025-08-14T14:35:37.812047+00:00  | INFO     |   %SRC_DIR%>set "nspr=4"
+2025-08-14T14:35:37.827682+00:00  | INFO     |   
+2025-08-14T14:35:37.844589+00:00  | INFO     |   %SRC_DIR%>set "nlopt=2.7"
+2025-08-14T14:35:37.869526+00:00  | INFO     |   
+2025-08-14T14:35:37.895487+00:00  | INFO     |   %SRC_DIR%>set "libksba=1.6"
+2025-08-14T14:35:37.911773+00:00  | INFO     |   
+2025-08-14T14:35:37.927413+00:00  | INFO     |   %SRC_DIR%>set "rust_compiler_version=1.87.0"
+2025-08-14T14:35:37.942708+00:00  | INFO     |   
+2025-08-14T14:35:37.961498+00:00  | INFO     |   %SRC_DIR%>set "macports_legacy_support=1"
+2025-08-14T14:35:37.978455+00:00  | INFO     |   
+2025-08-14T14:35:37.995868+00:00  | INFO     |   %SRC_DIR%>set "freeglut=3"
+2025-08-14T14:35:38.012144+00:00  | INFO     |   
+2025-08-14T14:35:38.027789+00:00  | INFO     |   %SRC_DIR%>set "libunwind=1"
+2025-08-14T14:35:38.043414+00:00  | INFO     |   
+2025-08-14T14:35:38.059113+00:00  | INFO     |   %SRC_DIR%>set "isl=0.22"
+2025-08-14T14:35:38.074652+00:00  | INFO     |   
+2025-08-14T14:35:38.095526+00:00  | INFO     |   %SRC_DIR%>set "vtk_base=9.4.1"
+2025-08-14T14:35:38.111788+00:00  | INFO     |   
+2025-08-14T14:35:38.127439+00:00  | INFO     |   %SRC_DIR%>set "libgsasl=1"
+2025-08-14T14:35:38.143114+00:00  | INFO     |   
+2025-08-14T14:35:38.158674+00:00  | INFO     |   %SRC_DIR%>set "popt=1"
+2025-08-14T14:35:38.176582+00:00  | INFO     |   
+2025-08-14T14:35:38.195649+00:00  | INFO     |   %SRC_DIR%>set "libapriconv=1"
+2025-08-14T14:35:38.196805+00:00  | INFO     |   
+2025-08-14T14:35:38.220667+00:00  | INFO     |   %SRC_DIR%>set "libwebp_base=1"
+2025-08-14T14:35:38.246601+00:00  | INFO     |   
+2025-08-14T14:35:38.267282+00:00  | INFO     |   %SRC_DIR%>set "m2w64_cxx_compiler=m2w64-toolchain"
+2025-08-14T14:35:38.282673+00:00  | INFO     |   
+2025-08-14T14:35:38.311246+00:00  | INFO     |   %SRC_DIR%>set "coin_or_cbc=2.10"
+2025-08-14T14:35:38.327523+00:00  | INFO     |   
+2025-08-14T14:35:38.343155+00:00  | INFO     |   %SRC_DIR%>set "libogg=1.3"
+2025-08-14T14:35:38.358826+00:00  | INFO     |   
+2025-08-14T14:35:38.375621+00:00  | INFO     |   %SRC_DIR%>set "cxx_compiler=vs2019"
+2025-08-14T14:35:38.378815+00:00  | INFO     |   
+2025-08-14T14:35:38.395485+00:00  | INFO     |   %SRC_DIR%>set "libclang_cpp14=14.0"
+2025-08-14T14:35:38.415908+00:00  | INFO     |   
+2025-08-14T14:35:38.431551+00:00  | INFO     |   %SRC_DIR%>set "libllvm19=19.1"
+2025-08-14T14:35:38.459268+00:00  | INFO     |   
+2025-08-14T14:35:38.474846+00:00  | INFO     |   %SRC_DIR%>set "ampl_mp=3.1"
+2025-08-14T14:35:38.495732+00:00  | INFO     |   
+2025-08-14T14:35:38.512623+00:00  | INFO     |   %SRC_DIR%>set "aws_c_io=0.20.1"
+2025-08-14T14:35:38.528256+00:00  | INFO     |   
+2025-08-14T14:35:38.542838+00:00  | INFO     |   %SRC_DIR%>set "libre2_11=2024"
+2025-08-14T14:35:38.559296+00:00  | INFO     |   
+2025-08-14T14:35:38.57494+00:00   | INFO     |   %SRC_DIR%>set "jemalloc=5.2.1"
+2025-08-14T14:35:38.595391+00:00  | INFO     |   
+2025-08-14T14:35:38.611653+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxcursor=1"
+2025-08-14T14:35:38.627345+00:00  | INFO     |   
+2025-08-14T14:35:38.642922+00:00  | INFO     |   %SRC_DIR%>set "xz=5"
+2025-08-14T14:35:38.658558+00:00  | INFO     |   
+2025-08-14T14:35:38.6739+00:00    | INFO     |   %SRC_DIR%>set "dbus=1"
+2025-08-14T14:35:38.695768+00:00  | INFO     |   
+2025-08-14T14:35:38.712066+00:00  | INFO     |   %SRC_DIR%>set "libntlm=1"
+2025-08-14T14:35:38.727673+00:00  | INFO     |   
+2025-08-14T14:35:38.743303+00:00  | INFO     |   %SRC_DIR%>set "librsvg=2"
+2025-08-14T14:35:38.758924+00:00  | INFO     |   
+2025-08-14T14:35:38.77455+00:00   | INFO     |   %SRC_DIR%>set "simdjson=3.10"
+2025-08-14T14:35:38.778638+00:00  | INFO     |   
+2025-08-14T14:35:38.795553+00:00  | INFO     |   %SRC_DIR%>set "geos=3.10.6"
+2025-08-14T14:35:38.811195+00:00  | INFO     |   
+2025-08-14T14:35:38.826808+00:00  | INFO     |   %SRC_DIR%>set "cuda_compiler=cuda-nvcc"
+2025-08-14T14:35:38.842442+00:00  | INFO     |   
+2025-08-14T14:35:38.858075+00:00  | INFO     |   %SRC_DIR%>set "sip=6.10"
+2025-08-14T14:35:38.873734+00:00  | INFO     |   
+2025-08-14T14:35:38.895787+00:00  | INFO     |   %SRC_DIR%>set "rhash=1"
+2025-08-14T14:35:38.911041+00:00  | INFO     |   
+2025-08-14T14:35:38.912236+00:00  | INFO     |   %SRC_DIR%>set "libmambapy=2.0"
+2025-08-14T14:35:38.937862+00:00  | INFO     |   
+2025-08-14T14:35:38.95349+00:00   | INFO     |   %SRC_DIR%>set "cran_mirror=https://cran.r-project.org"
+2025-08-14T14:35:38.968678+00:00  | INFO     |   
+2025-08-14T14:35:38.995614+00:00  | INFO     |   %SRC_DIR%>set "xcb_util_image=0.4"
+2025-08-14T14:35:39.011366+00:00  | INFO     |   
+2025-08-14T14:35:39.027002+00:00  | INFO     |   %SRC_DIR%>set "cudnn=9"
+2025-08-14T14:35:39.042608+00:00  | INFO     |   
+2025-08-14T14:35:39.058226+00:00  | INFO     |   %SRC_DIR%>set "kealib=1.5"
+2025-08-14T14:35:39.073857+00:00  | INFO     |   
+2025-08-14T14:35:39.095997+00:00  | INFO     |   %SRC_DIR%>set "libglib=2"
+2025-08-14T14:35:39.112267+00:00  | INFO     |   
+2025-08-14T14:35:39.1279+00:00    | INFO     |   %SRC_DIR%>set "glog=0.5"
+2025-08-14T14:35:39.143126+00:00  | INFO     |   
+2025-08-14T14:35:39.158867+00:00  | INFO     |   %SRC_DIR%>set "jansson=2"
+2025-08-14T14:35:39.176255+00:00  | INFO     |   
+2025-08-14T14:35:39.178969+00:00  | INFO     |   %SRC_DIR%>set "libcrc32c=1.1"
+2025-08-14T14:35:39.195377+00:00  | INFO     |   
+2025-08-14T14:35:39.211671+00:00  | INFO     |   %SRC_DIR%>set "libkml=1.3"
+2025-08-14T14:35:39.228202+00:00  | INFO     |   
+2025-08-14T14:35:39.244502+00:00  | INFO     |   %SRC_DIR%>set "zlib=1.2"
+2025-08-14T14:35:39.267617+00:00  | INFO     |   
+2025-08-14T14:35:39.295544+00:00  | INFO     |   %SRC_DIR%>set "libgpg_error=1"
+2025-08-14T14:35:39.303899+00:00  | INFO     |   
+2025-08-14T14:35:39.319743+00:00  | INFO     |   %SRC_DIR%>set "libgsf=1.14"
+2025-08-14T14:35:39.336052+00:00  | INFO     |   
+2025-08-14T14:35:39.351695+00:00  | INFO     |   %SRC_DIR%>set "libtiff=4"
+2025-08-14T14:35:39.35929+00:00   | INFO     |   
+2025-08-14T14:35:39.376448+00:00  | INFO     |   %SRC_DIR%>set "m2w64_c_compiler=m2w64-toolchain"
+2025-08-14T14:35:39.394924+00:00  | INFO     |   
+2025-08-14T14:35:39.41133+00:00   | INFO     |   %SRC_DIR%>set "azure_storage_blobs_cpp=12.13.0"
+2025-08-14T14:35:39.4276+00:00    | INFO     |   
+2025-08-14T14:35:39.443364+00:00  | INFO     |   %SRC_DIR%>set "giflib=5.2"
+2025-08-14T14:35:39.458964+00:00  | INFO     |   
+2025-08-14T14:35:39.474519+00:00  | INFO     |   %SRC_DIR%>set "libevent=2.1.12"
+2025-08-14T14:35:39.495772+00:00  | INFO     |   
+2025-08-14T14:35:39.512273+00:00  | INFO     |   %SRC_DIR%>set "zeromq=4.3"
+2025-08-14T14:35:39.528614+00:00  | INFO     |   
+2025-08-14T14:35:39.543881+00:00  | INFO     |   %SRC_DIR%>set "fortran_compiler=intel-fortran"
+2025-08-14T14:35:39.560228+00:00  | INFO     |   
+2025-08-14T14:35:39.575815+00:00  | INFO     |   %SRC_DIR%>set "ocl_icd=2"
+2025-08-14T14:35:39.595845+00:00  | INFO     |   
+2025-08-14T14:35:39.612139+00:00  | INFO     |   %SRC_DIR%>set "lerc=4"
+2025-08-14T14:35:39.627774+00:00  | INFO     |   
+2025-08-14T14:35:39.655512+00:00  | INFO     |   %SRC_DIR%>set "libvulkan=1.4"
+2025-08-14T14:35:39.671124+00:00  | INFO     |   
+2025-08-14T14:35:39.695584+00:00  | INFO     |   %SRC_DIR%>set "xcb_util_cursor=0.1"
+2025-08-14T14:35:39.71625+00:00   | INFO     |   
+2025-08-14T14:35:39.731884+00:00  | INFO     |   %SRC_DIR%>set "libmpdec=4"
+2025-08-14T14:35:39.747509+00:00  | INFO     |   
+2025-08-14T14:35:39.763141+00:00  | INFO     |   %SRC_DIR%>set "librdkafka=2.2"
+2025-08-14T14:35:39.778882+00:00  | INFO     |   
+2025-08-14T14:35:39.795333+00:00  | INFO     |   %SRC_DIR%>set "c_stdlib_version=2019.11"
+2025-08-14T14:35:39.811615+00:00  | INFO     |   
+2025-08-14T14:35:39.827301+00:00  | INFO     |   %SRC_DIR%>set "libfaiss=1.0.0"
+2025-08-14T14:35:39.842867+00:00  | INFO     |   
+2025-08-14T14:35:39.873899+00:00  | INFO     |   %SRC_DIR%>set "libglu=9"
+2025-08-14T14:35:39.877347+00:00  | INFO     |   
+2025-08-14T14:35:39.89369+00:00   | INFO     |   %SRC_DIR%>set "aws_sdk_cpp=1.11.528"
+2025-08-14T14:35:39.91181+00:00   | INFO     |   
+2025-08-14T14:35:39.92744+00:00   | INFO     |   %SRC_DIR%>set "xorg_xextproto=7"
+2025-08-14T14:35:39.94307+00:00   | INFO     |   
+2025-08-14T14:35:39.958713+00:00  | INFO     |   %SRC_DIR%>set "libglx=1"
+2025-08-14T14:35:39.978785+00:00  | INFO     |   
+2025-08-14T14:35:39.995512+00:00  | INFO     |   %SRC_DIR%>set "pyqtchart=5.15"
+2025-08-14T14:35:40.011796+00:00  | INFO     |   
+2025-08-14T14:35:40.027448+00:00  | INFO     |   %SRC_DIR%>set "metis=5.1"
+2025-08-14T14:35:40.043083+00:00  | INFO     |   
+2025-08-14T14:35:40.058685+00:00  | INFO     |   %SRC_DIR%>set "libdrm=2.4"
+2025-08-14T14:35:40.074298+00:00  | INFO     |   
+2025-08-14T14:35:40.095726+00:00  | INFO     |   %SRC_DIR%>set "libthrift=0.15"
+2025-08-14T14:35:40.11105+00:00   | INFO     |   
+2025-08-14T14:35:40.131655+00:00  | INFO     |   %SRC_DIR%>set "libmamba=2.0"
+2025-08-14T14:35:40.147382+00:00  | INFO     |   
+2025-08-14T14:35:40.176303+00:00  | INFO     |   %SRC_DIR%>set "libdeflate=1.22"
+2025-08-14T14:35:40.195801+00:00  | INFO     |   
+2025-08-14T14:35:40.218435+00:00  | INFO     |   %SRC_DIR%>set "libgl=1"
+2025-08-14T14:35:40.22769+00:00   | INFO     |   
+2025-08-14T14:35:40.243319+00:00  | INFO     |   %SRC_DIR%>set "libxml2=2.13"
+2025-08-14T14:35:40.268334+00:00  | INFO     |   
+2025-08-14T14:35:40.29541+00:00   | INFO     |   %SRC_DIR%>set "libclang13=14.0"
+2025-08-14T14:35:40.311671+00:00  | INFO     |   
+2025-08-14T14:35:40.327334+00:00  | INFO     |   %SRC_DIR%>set "arpack=3.9"
+2025-08-14T14:35:40.342494+00:00  | INFO     |   
+2025-08-14T14:35:40.358948+00:00  | INFO     |   %SRC_DIR%>set "target_platform=win-64"
+2025-08-14T14:35:40.376585+00:00  | INFO     |   
+2025-08-14T14:35:40.395554+00:00  | INFO     |   %SRC_DIR%>set "blosc=1"
+2025-08-14T14:35:40.411181+00:00  | INFO     |   
+2025-08-14T14:35:40.426825+00:00  | INFO     |   %SRC_DIR%>set "libgles=1"
+2025-08-14T14:35:40.442449+00:00  | INFO     |   
+2025-08-14T14:35:40.458065+00:00  | INFO     |   %SRC_DIR%>set "libidn2=2"
+2025-08-14T14:35:40.473693+00:00  | INFO     |   
+2025-08-14T14:35:40.495663+00:00  | INFO     |   %SRC_DIR%>set "assimp=6.0.2"
+2025-08-14T14:35:40.512041+00:00  | INFO     |   
+2025-08-14T14:35:40.528408+00:00  | INFO     |   %SRC_DIR%>set "xorg_libxmu=1"
+2025-08-14T14:35:40.543961+00:00  | INFO     |   
+2025-08-14T14:35:40.560236+00:00  | INFO     |   %SRC_DIR%>set "gnupg=2.4"
+2025-08-14T14:35:40.575875+00:00  | INFO     |   
+2025-08-14T14:35:40.595457+00:00  | INFO     |   %SRC_DIR%>set "xxhash=0.8.0"
+2025-08-14T14:35:40.611861+00:00  | INFO     |   
+2025-08-14T14:35:40.627486+00:00  | INFO     |   %SRC_DIR%>set "gdbm=1.18"
+2025-08-14T14:35:40.643269+00:00  | INFO     |   
+2025-08-14T14:35:40.658755+00:00  | INFO     |   %SRC_DIR%>set "libglvnd=1"
+2025-08-14T14:35:40.67438+00:00   | INFO     |   
+2025-08-14T14:35:40.695894+00:00  | INFO     |   %SRC_DIR%>set "gl2ps=1.4.2"
+2025-08-14T14:35:40.711505+00:00  | INFO     |   
+2025-08-14T14:35:40.727144+00:00  | INFO     |   %SRC_DIR%>set "libbrotlidec=1.0"
+2025-08-14T14:35:40.742757+00:00  | INFO     |   
+2025-08-14T14:35:40.758392+00:00  | INFO     |   %SRC_DIR%>set "libxslt=1"
+2025-08-14T14:35:40.774015+00:00  | INFO     |   
+2025-08-14T14:35:40.778662+00:00  | INFO     |   %SRC_DIR%>set "harfbuzz=10"
+2025-08-14T14:35:40.795464+00:00  | INFO     |   
+2025-08-14T14:35:40.8109+00:00    | INFO     |   %SRC_DIR%>set "reproc=14.2"
+2025-08-14T14:35:40.838532+00:00  | INFO     |   
+2025-08-14T14:35:40.854166+00:00  | INFO     |   %SRC_DIR%>set "readline=8"
+2025-08-14T14:35:40.869797+00:00  | INFO     |   
+2025-08-14T14:35:40.895585+00:00  | INFO     |   %SRC_DIR%>set "gst_plugins_good=1.24"
+2025-08-14T14:35:40.911299+00:00  | INFO     |   
+2025-08-14T14:35:40.926867+00:00  | INFO     |   %SRC_DIR%>set "pcre=8"
+2025-08-14T14:35:40.942499+00:00  | INFO     |   
+2025-08-14T14:35:40.958115+00:00  | INFO     |   %SRC_DIR%>set "nanobind_abi=15"
+2025-08-14T14:35:40.969275+00:00  | INFO     |   
+2025-08-14T14:35:40.978642+00:00  | INFO     |   %SRC_DIR%>set "xerces_c=3.2"
+2025-08-14T14:35:40.982411+00:00  | INFO     |   
+2025-08-14T14:35:40.995571+00:00  | INFO     |   %SRC_DIR%>set "x264=1!152.20180806"
+2025-08-14T14:35:41.011837+00:00  | INFO     |   
+2025-08-14T14:35:41.027485+00:00  | INFO     |   %SRC_DIR%>set "aws_c_compression=0.3.1"
+2025-08-14T14:35:41.043099+00:00  | INFO     |   
+2025-08-14T14:35:41.058823+00:00  | INFO     |   %SRC_DIR%>set "hdfeos2=2.20"
+2025-08-14T14:35:41.060633+00:00  | INFO     |   
+2025-08-14T14:35:41.076365+00:00  | INFO     |   %SRC_DIR%>set "libgd=2.3"
+2025-08-14T14:35:41.095752+00:00  | INFO     |   
+2025-08-14T14:35:41.111987+00:00  | INFO     |   %SRC_DIR%>set "gstreamer_orc=0.4"
+2025-08-14T14:35:41.127621+00:00  | INFO     |   
+2025-08-14T14:35:41.143286+00:00  | INFO     |   %SRC_DIR%>set "aws_c_http=0.10.2"
+2025-08-14T14:35:41.158879+00:00  | INFO     |   
+2025-08-14T14:35:41.176671+00:00  | INFO     |   %SRC_DIR%>set "json_c=0.16"
+2025-08-14T14:35:41.195371+00:00  | INFO     |   
+2025-08-14T14:35:41.211793+00:00  | INFO     |   %SRC_DIR%>set "libxkbfile=1"
+2025-08-14T14:35:41.227336+00:00  | INFO     |   
+2025-08-14T14:35:41.24292+00:00   | INFO     |   %SRC_DIR%>set "expat=2"
+2025-08-14T14:35:41.258214+00:00  | INFO     |   
+2025-08-14T14:35:41.278656+00:00  | INFO     |   %SRC_DIR%>set "openblas_devel=0"
+2025-08-14T14:35:41.29399+00:00   | INFO     |   
+2025-08-14T14:35:41.315402+00:00  | INFO     |   %SRC_DIR%>set "mysql_libs=9.3"
+2025-08-14T14:35:41.331677+00:00  | INFO     |   
+2025-08-14T14:35:41.347321+00:00  | INFO     |   %SRC_DIR%>set "qt=6.7"
+2025-08-14T14:35:41.375989+00:00  | INFO     |   
+2025-08-14T14:35:41.394938+00:00  | INFO     |   %SRC_DIR%>set "libsentencepiece=0.2.0"
+2025-08-14T14:35:41.418347+00:00  | INFO     |   
+2025-08-14T14:35:41.43463+00:00   | INFO     |   %SRC_DIR%>set "spirv_tools=2025"
+2025-08-14T14:35:41.450269+00:00  | INFO     |   
+2025-08-14T14:35:41.465897+00:00  | INFO     |   %SRC_DIR%>set "gflags=2.2"
+2025-08-14T14:35:41.482785+00:00  | INFO     |   
+2025-08-14T14:35:41.512265+00:00  | INFO     |   %SRC_DIR%>set "pixman=0"
+2025-08-14T14:35:41.527353+00:00  | INFO     |   
+2025-08-14T14:35:41.54439+00:00   | INFO     |   %SRC_DIR%>set "pdal=2.5"
+2025-08-14T14:35:41.560749+00:00  | INFO     |   
+2025-08-14T14:35:41.576374+00:00  | INFO     |   %SRC_DIR%>set "freexl=2"
+2025-08-14T14:35:41.595812+00:00  | INFO     |   
+2025-08-14T14:35:41.612091+00:00  | INFO     |   %SRC_DIR%>set "coin_or_cgl=0.60"
+2025-08-14T14:35:41.627838+00:00  | INFO     |   
+2025-08-14T14:35:41.643336+00:00  | INFO     |   %SRC_DIR%>set "libspatialite=5.1"
+2025-08-14T14:35:41.65896+00:00   | INFO     |   
+2025-08-14T14:35:41.674585+00:00  | INFO     |   %SRC_DIR%>set "pybind11_abi=5"
+2025-08-14T14:35:41.678729+00:00  | INFO     |   
+2025-08-14T14:35:41.695451+00:00  | INFO     |   %SRC_DIR%>set "ffmpeg=6"
+2025-08-14T14:35:41.711246+00:00  | INFO     |   
+2025-08-14T14:35:41.726814+00:00  | INFO     |   %SRC_DIR%>set "tesseract=5.2.0"
+2025-08-14T14:35:41.742441+00:00  | INFO     |   
+2025-08-14T14:35:41.758064+00:00  | INFO     |   %SRC_DIR%>set "libortools=9.9"
+2025-08-14T14:35:41.773676+00:00  | INFO     |   
+2025-08-14T14:35:41.795152+00:00  | INFO     |   %SRC_DIR%>set "mkl_service=2"
+2025-08-14T14:35:41.822459+00:00  | INFO     |   
+2025-08-14T14:35:41.849389+00:00  | INFO     |   %SRC_DIR%>set "azure_core_cpp=1.14.1"
+2025-08-14T14:35:41.870259+00:00  | INFO     |   
+2025-08-14T14:35:41.895566+00:00  | INFO     |   %SRC_DIR%>set "aws_c_mqtt=0.13.2"
+2025-08-14T14:35:41.91186+00:00   | INFO     |   
+2025-08-14T14:35:41.927496+00:00  | INFO     |   %SRC_DIR%>set "gsl=2.7"
+2025-08-14T14:35:41.943179+00:00  | INFO     |   
+2025-08-14T14:35:41.958788+00:00  | INFO     |   %SRC_DIR%>set "CONDA_BUILD_STATE=BUILD"
+2025-08-14T14:35:41.979089+00:00  | INFO     |   
+2025-08-14T14:35:41.995633+00:00  | INFO     |   %SRC_DIR%>set "PIP_NO_BUILD_ISOLATION=False"
+2025-08-14T14:35:41.996696+00:00  | INFO     |   
+2025-08-14T14:35:42.012434+00:00  | INFO     |   %SRC_DIR%>set "PIP_NO_DEPENDENCIES=True"
+2025-08-14T14:35:42.028088+00:00  | INFO     |   
+2025-08-14T14:35:42.043716+00:00  | INFO     |   %SRC_DIR%>set "PIP_IGNORE_INSTALLED=True"
+2025-08-14T14:35:42.04494+00:00   | INFO     |   
+2025-08-14T14:35:42.073378+00:00  | INFO     |   %SRC_DIR%>set "PIP_CACHE_DIR=C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\pip_cache"
+2025-08-14T14:35:42.095318+00:00  | INFO     |   
+2025-08-14T14:35:42.112937+00:00  | INFO     |   %SRC_DIR%>set "PIP_NO_INDEX=True"
+2025-08-14T14:35:42.128565+00:00  | INFO     |   
+2025-08-14T14:35:42.144233+00:00  | INFO     |   %SRC_DIR%>set DISTUTILS_USE_SDK=1
+2025-08-14T14:35:42.159819+00:00  | INFO     |   
+2025-08-14T14:35:42.176664+00:00  | INFO     |   %SRC_DIR%>set MSSdk=1
+2025-08-14T14:35:42.195987+00:00  | INFO     |   
+2025-08-14T14:35:42.198611+00:00  | INFO     |   %SRC_DIR%>set PY_VCRUNTIME_REDIST=%PREFIX%\Library\bin\vcruntime140.dll
+2025-08-14T14:35:42.214373+00:00  | INFO     |   
+2025-08-14T14:35:42.230006+00:00  | INFO     |   %SRC_DIR%>set "VS_VERSION=14.0"
+2025-08-14T14:35:42.245628+00:00  | INFO     |   
+2025-08-14T14:35:42.26971+00:00   | INFO     |   %SRC_DIR%>set "VS_MAJOR=14"
+2025-08-14T14:35:42.295559+00:00  | INFO     |   
+2025-08-14T14:35:42.296857+00:00  | INFO     |   %SRC_DIR%>set "VS_YEAR=2015"
+2025-08-14T14:35:42.321933+00:00  | INFO     |   
+2025-08-14T14:35:42.337571+00:00  | INFO     |   %SRC_DIR%>set "CMAKE_GENERATOR=Visual Studio 14 2015 Win64"
+2025-08-14T14:35:42.353201+00:00  | INFO     |   
+2025-08-14T14:35:42.358798+00:00  | INFO     |   %SRC_DIR%>set "MSYS2_ARG_CONV_EXCL=/AI;/AL;/OUT;/out"
+2025-08-14T14:35:42.375981+00:00  | INFO     |   
+2025-08-14T14:35:42.378632+00:00  | INFO     |   %SRC_DIR%>set "MSYS2_ENV_CONV_EXCL=CL"
+2025-08-14T14:35:42.395918+00:00  | INFO     |   
+2025-08-14T14:35:42.421886+00:00  | INFO     |   %SRC_DIR%>call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
+2025-08-14T14:35:42.437511+00:00  | INFO     |   
+2025-08-14T14:35:42.453174+00:00  | INFO     |   %SRC_DIR%>set "INCLUDE=%PREFIX%\Library\include;"
+2025-08-14T14:35:42.468806+00:00  | INFO     |   
+2025-08-14T14:35:42.484088+00:00  | INFO     |   %SRC_DIR%>set "LIB=%PREFIX%\Library\lib;"
+2025-08-14T14:35:42.51224+00:00   | INFO     |   
+2025-08-14T14:35:42.522353+00:00  | INFO     |   %SRC_DIR%>call "C:\miniconda3\condabin\conda_hook.bat"
+2025-08-14T14:35:42.530856+00:00  | INFO     |   
+2025-08-14T14:35:42.561193+00:00  | INFO     |   %SRC_DIR%>set "CONDA_EXE=C:\miniconda3\Scripts\conda.exe"
+2025-08-14T14:35:42.576751+00:00  | INFO     |   
+2025-08-14T14:35:42.595719+00:00  | INFO     |   %SRC_DIR%>set "_CE_M="
+2025-08-14T14:35:42.621645+00:00  | INFO     |   
+2025-08-14T14:35:42.637279+00:00  | INFO     |   %SRC_DIR%>set "_CE_CONDA="
+2025-08-14T14:35:42.652918+00:00  | INFO     |   
+2025-08-14T14:35:42.668533+00:00  | INFO     |   %SRC_DIR%>set "CONDA_PYTHON_EXE=C:\miniconda3\python.exe"
+2025-08-14T14:35:42.678707+00:00  | INFO     |   
+2025-08-14T14:35:42.695735+00:00  | INFO     |   %SRC_DIR%>call "C:\miniconda3\condabin\conda.bat" activate "%PREFIX%"
+2025-08-14T14:35:42.72166+00:00   | INFO     |   Failed to run 'conda activate --stack "%BUILD_PREFIX%"'.
+2025-08-14T14:35:42.73729+00:00   | INFO     |   Using pip 25.1 from %PREFIX%\Lib\site-packages\pip (python 3.12)
+2025-08-14T14:35:42.752917+00:00  | INFO     |   Non-user install because user site-packages disabled
+2025-08-14T14:35:42.768095+00:00  | INFO     |   Ignoring indexes: https://pypi.org/simple
+2025-08-14T14:35:42.795656+00:00  | INFO     |   Created temporary directory: C:\cygwin64\tmp\pip-build-tracker-r3jm_vdv
+2025-08-14T14:35:42.821629+00:00  | INFO     |   Initialized build tracking at C:\cygwin64\tmp\pip-build-tracker-r3jm_vdv
+2025-08-14T14:35:42.845127+00:00  | INFO     |   Created build tracker: C:\cygwin64\tmp\pip-build-tracker-r3jm_vdv
+2025-08-14T14:35:42.860765+00:00  | INFO     |   Entered build tracker: C:\cygwin64\tmp\pip-build-tracker-r3jm_vdv
+2025-08-14T14:35:42.87598+00:00   | INFO     |   Created temporary directory: C:\cygwin64\tmp\pip-install-0tykdkis
+2025-08-14T14:35:42.89576+00:00   | INFO     |   Created temporary directory: C:\cygwin64\tmp\pip-ephem-wheel-cache-e40toynu
+2025-08-14T14:35:42.92168+00:00   | INFO     |   Processing c:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\work
+2025-08-14T14:35:42.937301+00:00  | INFO     |     Added file:///C:/b/abs_a2lrw7uhfo/croot/pythonanywhere-core_1755182070219/work to build tracker 'C:\\cygwin64\\tmp\\pip-build-tracker-r3jm_vdv'
+2025-08-14T14:35:42.952941+00:00  | INFO     |     Created temporary directory: C:\cygwin64\tmp\pip-modern-metadata-y7jfd6xw
+2025-08-14T14:35:42.968548+00:00  | INFO     |     Preparing metadata (pyproject.toml): started
+2025-08-14T14:35:42.995867+00:00  | INFO     |     Preparing metadata (pyproject.toml): finished with status 'done'
+2025-08-14T14:35:43.006074+00:00  | INFO     |     Source in c:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\work has version 0.2.4, which satisfies requirement pythonanywhere-core==0.2.4 from file:///C:/b/abs_a2lrw7uhfo/croot/pythonanywhere-core_1755182070219/work
+2025-08-14T14:35:43.010921+00:00  | INFO     |     Removed pythonanywhere-core==0.2.4 from file:///C:/b/abs_a2lrw7uhfo/croot/pythonanywhere-core_1755182070219/work from build tracker 'C:\\cygwin64\\tmp\\pip-build-tracker-r3jm_vdv'
+2025-08-14T14:35:43.012686+00:00  | INFO     |   Created temporary directory: C:\cygwin64\tmp\pip-unpack-ut8c5vpv
+2025-08-14T14:35:43.036825+00:00  | INFO     |   Building wheels for collected packages: pythonanywhere-core
+2025-08-14T14:35:43.052467+00:00  | INFO     |     Created temporary directory: C:\cygwin64\tmp\pip-wheel-sdo5fhdu
+2025-08-14T14:35:43.06808+00:00   | INFO     |     Destination directory: C:\cygwin64\tmp\pip-wheel-sdo5fhdu
+2025-08-14T14:35:43.09557+00:00   | INFO     |     Building wheel for pythonanywhere-core (pyproject.toml): started
+2025-08-14T14:35:43.121474+00:00  | INFO     |     Building wheel for pythonanywhere-core (pyproject.toml): finished with status 'done'
+2025-08-14T14:35:43.137117+00:00  | INFO     |     Created wheel for pythonanywhere-core: filename=pythonanywhere_core-0.2.4-py3-none-any.whl size=12121 sha256=cdb9362e3da5570cf0e1f66dc5fdf46fc2b09353284f22d8fbaccca491230c1e
+2025-08-14T14:35:43.152739+00:00  | INFO     |     Stored in directory: C:\cygwin64\tmp\pip-ephem-wheel-cache-e40toynu\wheels\54\5e\72\54978154144465ce717aa707f8f47b13191f457416d776e7fe
+2025-08-14T14:35:43.177254+00:00  | INFO     |   Successfully built pythonanywhere-core
+2025-08-14T14:35:43.195705+00:00  | INFO     |   Installing collected packages: pythonanywhere-core
+2025-08-14T14:35:43.221534+00:00  | INFO     |   
+2025-08-14T14:35:43.246443+00:00  | INFO     |   Successfully installed pythonanywhere-core-0.2.4
+2025-08-14T14:35:43.270364+00:00  | INFO     |   Removed build tracker: 'C:\\cygwin64\\tmp\\pip-build-tracker-r3jm_vdv'
+2025-08-14T14:35:43.295479+00:00  | INFO     |   
+2025-08-14T14:35:43.321423+00:00  | INFO     |   Resource usage statistics from building pythonanywhere-core:
+2025-08-14T14:35:43.337059+00:00  | INFO     |      Process count: 3
+2025-08-14T14:35:43.352684+00:00  | INFO     |      CPU time: Sys=0:00:01.2, User=0:00:01.2
+2025-08-14T14:35:43.367955+00:00  | INFO     |      Memory: 89.8M
+2025-08-14T14:35:43.387244+00:00  | INFO     |      Disk usage: 200.2K
+2025-08-14T14:35:43.411393+00:00  | INFO     |      Time elapsed: 0:00:08.1
+2025-08-14T14:35:43.437331+00:00  | INFO     |   
+2025-08-14T14:35:43.452998+00:00  | INFO     |   
+2025-08-14T14:35:43.468616+00:00  | INFO     |   Packaging pythonanywhere-core
+2025-08-14T14:35:43.478841+00:00  | INFO     |   Packaging pythonanywhere-core-0.2.4-py312haa95532_0
+2025-08-14T14:35:43.483812+00:00  | INFO     |   compiling .pyc files...
+2025-08-14T14:35:43.513243+00:00  | INFO     |   number of files: 23
+2025-08-14T14:35:43.539307+00:00  | INFO     |   Fixing permissions
+2025-08-14T14:35:43.56184+00:00   | INFO     |   Adding the following extra-meta data to about.json: {'sha': '218c389be104410dc1b5fe0f486a96d20a3d2e2c', 'remote_url': 'git@github.com:AnacondaRecipes/pythonanywhere-core-feedstock.git', 'flow_run_id': 'a2ee78d9-7dce-4288-b2d1-16c7fee539b0'}
+2025-08-14T14:35:43.577479+00:00  | INFO     |   WARNING: Importing conda-verify failed.  Please be sure to test your packages.  conda install conda-verify to make this message go away.
+2025-08-14T14:35:43.595419+00:00  | INFO     |   Packaged license file/s.
+2025-08-14T14:35:43.621607+00:00  | INFO     |   INFO :: Time taken to mark (prefix)
+2025-08-14T14:35:43.637247+00:00  | INFO     |           0 replacements in 0 files was 0.00 seconds
+2025-08-14T14:35:43.652853+00:00  | INFO     |   TEST START: C:\b\abs_a2lrw7uhfo\upload\win-64\pythonanywhere-core-0.2.4-py312haa95532_0.tar.bz2
+2025-08-14T14:35:43.668483+00:00  | INFO     |   Adding in variants from C:\cygwin64\tmp\tmpngnf9hj8\info\recipe\conda_build_config.yaml
+2025-08-14T14:35:43.695961+00:00  | INFO     |   Adding in variants from config.variant
+2025-08-14T14:35:43.720097+00:00  | INFO     |   Renaming C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\_h_env prefix directory 'C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\_h_env' to 'C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\host_prefix_moved_pythonanywhere-core-0.2.4-py312haa95532_0_win-64'
+2025-08-14T14:35:43.721969+00:00  | INFO     |   shutil.move(C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\_h_env prefix)=C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\_h_env, dest=C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\host_prefix_moved_pythonanywhere-core-0.2.4-py312haa95532_0_win-64)
+2025-08-14T14:35:43.747157+00:00  | INFO     |   Renaming work directory 'C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\work' to 'C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\work_moved_pythonanywhere-core-0.2.4-py312haa95532_0_win-64'
+2025-08-14T14:35:43.762796+00:00  | INFO     |   shutil.move(work)=C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\work, dest=C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\work_moved_pythonanywhere-core-0.2.4-py312haa95532_0_win-64)
+2025-08-14T14:35:43.778419+00:00  | INFO     |   Reloading output folder: ...working... done
+2025-08-14T14:35:43.795509+00:00  | INFO     |   Solving environment (_test_env): ...working... done
+2025-08-14T14:35:46.127497+00:00  | INFO     |   
+2025-08-14T14:35:46.143128+00:00  | INFO     |   ## Package Plan ##
+2025-08-14T14:35:46.158745+00:00  | INFO     |   
+2025-08-14T14:35:46.178834+00:00  | INFO     |     environment location: C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\_test_env
+2025-08-14T14:35:46.19571+00:00   | INFO     |   
+2025-08-14T14:35:46.211998+00:00  | INFO     |   
+2025-08-14T14:35:46.227635+00:00  | INFO     |   The following NEW packages will be INSTALLED:
+2025-08-14T14:35:46.243353+00:00  | INFO     |   
+2025-08-14T14:35:46.258874+00:00  | INFO     |       brotlicffi:          1.0.9.2-py312h5da7b33_1    defaults
+2025-08-14T14:35:46.278595+00:00  | INFO     |       bzip2:               1.0.8-h2bbff1b_6           defaults
+2025-08-14T14:35:46.295617+00:00  | INFO     |       ca-certificates:     2025.7.15-haa95532_0       defaults
+2025-08-14T14:35:46.31187+00:00   | INFO     |       certifi:             2025.8.3-py312haa95532_0   defaults
+2025-08-14T14:35:46.327506+00:00  | INFO     |       cffi:                1.17.1-py312h827c3e9_1     defaults
+2025-08-14T14:35:46.343138+00:00  | INFO     |       charset-normalizer:  3.3.2-pyhd3eb1b0_0         defaults
+2025-08-14T14:35:46.358761+00:00  | INFO     |       colorama:            0.4.6-py312haa95532_0      defaults
+2025-08-14T14:35:46.375696+00:00  | INFO     |       expat:               2.7.1-h8ddb27b_0           defaults
+2025-08-14T14:35:46.395718+00:00  | INFO     |       idna:                3.7-py312haa95532_0        defaults
+2025-08-14T14:35:46.411361+00:00  | INFO     |       iniconfig:           2.1.0-py312haa95532_0      defaults
+2025-08-14T14:35:46.427007+00:00  | INFO     |       libffi:              3.4.4-hd77b12b_1           defaults
+2025-08-14T14:35:46.442631+00:00  | INFO     |       openssl:             3.0.17-h35632f6_0          defaults
+2025-08-14T14:35:46.458251+00:00  | INFO     |       packaging:           25.0-py312haa95532_0       defaults
+2025-08-14T14:35:46.473904+00:00  | INFO     |       pip:                 25.1-pyhc872135_2          defaults
+2025-08-14T14:35:46.478574+00:00  | INFO     |       pluggy:              1.5.0-py312haa95532_0      defaults
+2025-08-14T14:35:46.493117+00:00  | INFO     |       pycparser:           2.21-pyhd3eb1b0_0          defaults
+2025-08-14T14:35:46.513325+00:00  | INFO     |       pygments:            2.19.1-py312haa95532_0     defaults
+2025-08-14T14:35:46.529616+00:00  | INFO     |       pysocks:             1.7.1-py312haa95532_0      defaults
+2025-08-14T14:35:46.54525+00:00   | INFO     |       pytest:              8.4.1-py312haa95532_0      defaults
+2025-08-14T14:35:46.56373+00:00   | INFO     |       pytest-mock:         3.14.0-py312haa95532_0     defaults
+2025-08-14T14:35:46.578925+00:00  | INFO     |       python:              3.12.11-h716150d_0         defaults
+2025-08-14T14:35:46.595803+00:00  | INFO     |       python-dateutil:     2.9.0post0-py312haa95532_2 defaults
+2025-08-14T14:35:46.612072+00:00  | INFO     |       pythonanywhere-core: 0.2.4-py312haa95532_0      file:///C:/b/abs_a2lrw7uhfo/upload
+2025-08-14T14:35:46.627723+00:00  | INFO     |       pyyaml:              6.0.2-py312h827c3e9_0      defaults
+2025-08-14T14:35:46.643402+00:00  | INFO     |       requests:            2.32.4-py312haa95532_0     defaults
+2025-08-14T14:35:46.658952+00:00  | INFO     |       responses:           0.25.0-py312haa95532_0     defaults
+2025-08-14T14:35:46.674573+00:00  | INFO     |       setuptools:          78.1.1-py312haa95532_0     defaults
+2025-08-14T14:35:46.695793+00:00  | INFO     |       six:                 1.17.0-py312haa95532_0     defaults
+2025-08-14T14:35:46.712079+00:00  | INFO     |       snakesay:            0.10.3-py312haa95532_0     defaults
+2025-08-14T14:35:46.727742+00:00  | INFO     |       sqlite:              3.50.2-hda9a48d_1          defaults
+2025-08-14T14:35:46.743339+00:00  | INFO     |       tk:                  8.6.14-h5e9d12e_1          defaults
+2025-08-14T14:35:46.758956+00:00  | INFO     |       typing_extensions:   4.12.2-py312haa95532_0     defaults
+2025-08-14T14:35:46.774576+00:00  | INFO     |       tzdata:              2025b-h04d1e81_0           defaults
+2025-08-14T14:35:46.795592+00:00  | INFO     |       ucrt:                10.0.22621.0-haa95532_0    defaults
+2025-08-14T14:35:46.811342+00:00  | INFO     |       urllib3:             2.5.0-py312haa95532_0      defaults
+2025-08-14T14:35:46.826998+00:00  | INFO     |       vc:                  14.3-h2df5915_10           defaults
+2025-08-14T14:35:46.849292+00:00  | INFO     |       vc14_runtime:        14.44.35208-h4927774_10    defaults
+2025-08-14T14:35:46.865573+00:00  | INFO     |       vs2015_runtime:      14.44.35208-ha6b5a95_10    defaults
+2025-08-14T14:35:46.882689+00:00  | INFO     |       wheel:               0.45.1-py312haa95532_0     defaults
+2025-08-14T14:35:46.912206+00:00  | INFO     |       win_inet_pton:       1.1.0-py312haa95532_0      defaults
+2025-08-14T14:35:46.928479+00:00  | INFO     |       xz:                  5.6.4-h4754444_1           defaults
+2025-08-14T14:35:46.944134+00:00  | INFO     |       yaml:                0.2.5-he774522_0           defaults
+2025-08-14T14:35:46.95984+00:00   | INFO     |       zlib:                1.2.13-h8cc25b3_1          defaults
+2025-08-14T14:35:46.961449+00:00  | INFO     |   
+2025-08-14T14:35:46.978654+00:00  | INFO     |   Preparing transaction: ...working... done
+2025-08-14T14:35:49.421681+00:00  | INFO     |   Verifying transaction: ...working... done
+2025-08-14T14:35:57.095579+00:00  | INFO     |   Executing transaction: ...working... done
+2025-08-14T14:36:03.27312+00:00   | INFO     |   WARNING: Tests failed for pythonanywhere-core-0.2.4-py312haa95532_0.tar.bz2 - moving package to C:\b\abs_a2lrw7uhfo\croot\broken
+2025-08-14T14:36:03.440082+00:00  | INFO     |   
+2025-08-14T14:36:03.45587+00:00   | INFO     |   CondaBuildUserError: TESTS FAILED: pythonanywhere-core-0.2.4-py312haa95532_0.tar.bz2
+2025-08-14T14:36:03.472335+00:00  | INFO     |   
+2025-08-14T14:36:03.495652+00:00  | INFO     |   set PREFIX=C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\_test_env
+2025-08-14T14:36:03.521877+00:00  | INFO     |   set SRC_DIR=C:\b\abs_a2lrw7uhfo\croot\pythonanywhere-core_1755182070219\test_tmp
+2025-08-14T14:36:03.537522+00:00  | INFO     |   
+2025-08-14T14:36:03.553143+00:00  | INFO     |   %SRC_DIR%>call "%SRC_DIR%\conda_test_env_vars.bat"
+2025-08-14T14:36:03.572658+00:00  | INFO     |   
+2025-08-14T14:36:03.5957+00:00    | INFO     |   %SRC_DIR%>set "CONDA_SHLVL="   &&
+2025-08-14T14:36:03.623474+00:00  | INFO     |   
+2025-08-14T14:36:03.639049+00:00  | INFO     |   %SRC_DIR%>conda activate "%PREFIX%"
+2025-08-14T14:36:03.654654+00:00  | INFO     |   import: 'pythonanywhere_core'
+2025-08-14T14:36:03.670434+00:00  | INFO     |   import: 'pythonanywhere_core.base'
+2025-08-14T14:36:03.695946+00:00  | INFO     |   import: 'pythonanywhere_core.exceptions'
+2025-08-14T14:36:03.721851+00:00  | INFO     |   import: 'pythonanywhere_core.files'
+2025-08-14T14:36:03.737496+00:00  | INFO     |   import: 'pythonanywhere_core.schedule'
+2025-08-14T14:36:03.75312+00:00   | INFO     |   import: 'pythonanywhere_core.students'
+2025-08-14T14:36:03.768745+00:00  | INFO     |   import: 'pythonanywhere_core.webapp'
+2025-08-14T14:36:03.795449+00:00  | INFO     |   import: 'pythonanywhere_core.website'
+2025-08-14T14:36:03.821448+00:00  | INFO     |   import: 'pythonanywhere_core'
+2025-08-14T14:36:03.837164+00:00  | INFO     |   import: 'pythonanywhere_core.base'
+2025-08-14T14:36:03.853863+00:00  | INFO     |   import: 'pythonanywhere_core.exceptions'
+2025-08-14T14:36:03.873985+00:00  | INFO     |   import: 'pythonanywhere_core.files'
+2025-08-14T14:36:03.896023+00:00  | INFO     |   import: 'pythonanywhere_core.schedule'
+2025-08-14T14:36:03.911713+00:00  | INFO     |   import: 'pythonanywhere_core.students'
+2025-08-14T14:36:03.927349+00:00  | INFO     |   import: 'pythonanywhere_core.webapp'
+2025-08-14T14:36:03.942954+00:00  | INFO     |   import: 'pythonanywhere_core.website'
+2025-08-14T14:36:03.958606+00:00  | INFO     |   No broken requirements found.
+2025-08-14T14:36:03.974206+00:00  | INFO     |   [1m============================= test session starts =============================[0m
+2025-08-14T14:36:03.995834+00:00  | INFO     |   platform win32 -- Python 3.12.11, pytest-8.4.1, pluggy-1.5.0 -- %PREFIX%\python.exe
+2025-08-14T14:36:04.012124+00:00  | INFO     |   cachedir: .pytest_cache
+2025-08-14T14:36:04.027757+00:00  | INFO     |   rootdir: %SRC_DIR%
+2025-08-14T14:36:04.04338+00:00   | INFO     |   plugins: mock-3.14.0
+2025-08-14T14:36:04.05902+00:00   | INFO     |   [1mcollecting ... [0mcollected 85 items
+2025-08-14T14:36:04.070513+00:00  | INFO     |   
+2025-08-14T14:36:04.074286+00:00  | INFO     |   gh_src/tests/test_base.py::test_get_api_endpoint_defaults_to_pythonanywhere_dot_com_if_no_environment_variables [32mPASSED[0m[32m [  1%][0m
+2025-08-14T14:36:04.075815+00:00  | INFO     |   gh_src/tests/test_base.py::test_get_api_endpoint_gets_domain_from_pythonanywhere_site_and_ignores_pythonanywhere_domain_if_both_set [32mPASSED[0m[32m [  2%][0m
+2025-08-14T14:36:04.077194+00:00  | INFO     |   gh_src/tests/test_base.py::test_get_api_endpoint_gets_domain_from_pythonanywhere_domain_and_adds_on_www_if_set_but_pythonanywhere_site_is_not [32mPASSED[0m[32m [  3%][0m
+2025-08-14T14:36:04.096081+00:00  | INFO     |   gh_src/tests/test_base.py::test_get_api_endpoint_returns_url_with_correct_api_version[files-v0] [32mPASSED[0m[32m [  4%][0m
+2025-08-14T14:36:04.111707+00:00  | INFO     |   gh_src/tests/test_base.py::test_get_api_endpoint_returns_url_with_correct_api_version[schedule-v0] [32mPASSED[0m[32m [  5%][0m
+2025-08-14T14:36:04.127345+00:00  | INFO     |   gh_src/tests/test_base.py::test_get_api_endpoint_returns_url_with_correct_api_version[students-v0] [32mPASSED[0m[32m [  7%][0m
+2025-08-14T14:36:04.142975+00:00  | INFO     |   gh_src/tests/test_base.py::test_get_api_endpoint_returns_url_with_correct_api_version[webapps-v0] [32mPASSED[0m[32m [  8%][0m
+2025-08-14T14:36:04.158598+00:00  | INFO     |   gh_src/tests/test_base.py::test_get_api_endpoint_returns_url_with_correct_api_version[websites-v1] [32mPASSED[0m[32m [  9%][0m
+2025-08-14T14:36:04.176659+00:00  | INFO     |   gh_src/tests/test_base.py::test_raises_on_401 [32mPASSED[0m[32m                     [ 10%][0m
+2025-08-14T14:36:04.178953+00:00  | INFO     |   gh_src/tests/test_base.py::test_passes_verify_from_environment [32mPASSED[0m[32m    [ 11%][0m
+2025-08-14T14:36:04.195938+00:00  | INFO     |   gh_src/tests/test_base.py::test_verify_is_true_if_env_not_set [32mPASSED[0m[32m     [ 12%][0m
+2025-08-14T14:36:04.212213+00:00  | INFO     |   gh_src/tests/test_base.py::test_raises_with_helpful_message_if_no_token_present [32mPASSED[0m[32m [ 14%][0m
+2025-08-14T14:36:04.227854+00:00  | INFO     |   gh_src/tests/test_base.py::test_helpful_message_inside_pythonanywhere [32mPASSED[0m[32m [ 15%][0m
+2025-08-14T14:36:04.243487+00:00  | INFO     |   gh_src/tests/test_base.py::test_helpful_message_outside_pythonanywhere [32mPASSED[0m[32m [ 16%][0m
+2025-08-14T14:36:04.259104+00:00  | INFO     |   gh_src/tests/test_files.py::test_path_get_returns_contents_of_directory_when_path_to_dir_provided [32mPASSED[0m[32m [ 17%][0m
+2025-08-14T14:36:04.280679+00:00  | INFO     |   gh_src/tests/test_files.py::test_path_get_returns_file_contents_when_file_path_provided [32mPASSED[0m[32m [ 18%][0m
+2025-08-14T14:36:04.295924+00:00  | INFO     |   gh_src/tests/test_files.py::test_path_get_raises_because_wrong_path_provided [32mPASSED[0m[32m [ 20%][0m
+2025-08-14T14:36:04.311657+00:00  | INFO     |   gh_src/tests/test_files.py::test_path_post_returns_200_when_existing_file_updated [32mPASSED[0m[32m [ 21%][0m
+2025-08-14T14:36:04.31347+00:00   | INFO     |   gh_src/tests/test_files.py::test_path_post_returns_201_when_new_file_uploaded [32mPASSED[0m[32m [ 22%][0m
+2025-08-14T14:36:04.338971+00:00  | INFO     |   gh_src/tests/test_files.py::test_path_post_raises_when_wrong_path [32mPASSED[0m[32m [ 23%][0m
+2025-08-14T14:36:04.354596+00:00  | INFO     |   gh_src/tests/test_files.py::test_path_post_raises_when_no_contents_provided [32mPASSED[0m[32m [ 24%][0m
+2025-08-14T14:36:04.376873+00:00  | INFO     |   gh_src/tests/test_files.py::test_path_delete_returns_204_on_successful_file_deletion [32mPASSED[0m[32m [ 25%][0m
+2025-08-14T14:36:04.37902+00:00   | INFO     |   gh_src/tests/test_files.py::test_path_delete_raises_when_permission_denied [32mPASSED[0m[32m [ 27%][0m
+2025-08-14T14:36:04.395899+00:00  | INFO     |   gh_src/tests/test_files.py::test_path_delete_raises_when_wrong_path_provided [32mPASSED[0m[32m [ 28%][0m
+2025-08-14T14:36:04.421102+00:00  | INFO     |   gh_src/tests/test_files.py::test_sharing_post_returns_url_when_path_successfully_shared_or_has_been_shared_before [32mPASSED[0m[32m [ 29%][0m
+2025-08-14T14:36:04.436741+00:00  | INFO     |   gh_src/tests/test_files.py::test_sharing_post_raises_exception_when_path_not_provided [33mSKIPPED[0m[32m [ 30%][0m
+2025-08-14T14:36:04.452355+00:00  | INFO     |   gh_src/tests/test_files.py::test_sharing_get_returns_sharing_url_when_path_is_shared [32mPASSED[0m[32m [ 31%][0m
+2025-08-14T14:36:04.467984+00:00  | INFO     |   gh_src/tests/test_files.py::test_sharing_get_returns_empty_string_when_path_not_shared [32mPASSED[0m[32m [ 32%][0m
+2025-08-14T14:36:04.483274+00:00  | INFO     |   gh_src/tests/test_files.py::test_returns_204_on_sucessful_unshare [32mPASSED[0m[32m [ 34%][0m
+2025-08-14T14:36:04.512536+00:00  | INFO     |   gh_src/tests/test_files.py::test_returns_list_of_the_regular_files_and_subdirectories_of_a_directory [32mPASSED[0m[32m [ 35%][0m
+2025-08-14T14:36:04.528847+00:00  | INFO     |   gh_src/tests/test_files.py::test_raises_when_path_not_pointing_to_directory [32mPASSED[0m[32m [ 36%][0m
+2025-08-14T14:36:04.544477+00:00  | INFO     |   gh_src/tests/test_files.py::test_raises_when_path_does_not_exist [32mPASSED[0m[32m  [ 37%][0m
+2025-08-14T14:36:04.560911+00:00  | INFO     |   gh_src/tests/test_schedule.py::test_creates_daily_task [32mPASSED[0m[32m            [ 38%][0m
+2025-08-14T14:36:04.577206+00:00  | INFO     |   gh_src/tests/test_schedule.py::test_creates_hourly_task [32mPASSED[0m[32m           [ 40%][0m
+2025-08-14T14:36:04.595981+00:00  | INFO     |   gh_src/tests/test_schedule.py::test_raises_because_missing_params [32mPASSED[0m[32m [ 41%][0m
+2025-08-14T14:36:04.612279+00:00  | INFO     |   gh_src/tests/test_schedule.py::test_deletes_task [32mPASSED[0m[32m                  [ 42%][0m
+2025-08-14T14:36:04.627908+00:00  | INFO     |   gh_src/tests/test_schedule.py::test_raises_because_attempt_to_delete_nonexisting_task [32mPASSED[0m[32m [ 43%][0m
+2025-08-14T14:36:04.643532+00:00  | INFO     |   gh_src/tests/test_schedule.py::test_returns_spec_dict [32mPASSED[0m[32m             [ 44%][0m
+2025-08-14T14:36:04.659184+00:00  | INFO     |   gh_src/tests/test_schedule.py::test_raises_because_attempt_to_get_nonexisting_task [32mPASSED[0m[32m [ 45%][0m
+2025-08-14T14:36:04.67478+00:00   | INFO     |   gh_src/tests/test_schedule.py::test_returns_tasks_list [32mPASSED[0m[32m            [ 47%][0m
+2025-08-14T14:36:04.695751+00:00  | INFO     |   gh_src/tests/test_schedule.py::test_updates_daily_task [32mPASSED[0m[32m            [ 48%][0m
+2025-08-14T14:36:04.712143+00:00  | INFO     |   gh_src/tests/test_schedule.py::test_raises_when_wrong_params [32mPASSED[0m[32m      [ 49%][0m
+2025-08-14T14:36:04.727728+00:00  | INFO     |   gh_src/tests/test_students.py::TestStudentsAPIGet::test_gets_list_of_students_when_there_are_some [32mPASSED[0m[32m [ 50%][0m
+2025-08-14T14:36:04.743345+00:00  | INFO     |   gh_src/tests/test_students.py::TestStudentsAPIGet::test_gets_empty_list_of_students_when_there_none [32mPASSED[0m[32m [ 51%][0m
+2025-08-14T14:36:04.758977+00:00  | INFO     |   gh_src/tests/test_students.py::TestStudentsAPIDelete::test_returns_204_when_student_deleted [32mPASSED[0m[32m [ 52%][0m
+2025-08-14T14:36:04.774598+00:00  | INFO     |   gh_src/tests/test_students.py::TestStudentsAPIDelete::test_raises_with_404_when_no_student_to_delete_found [32mPASSED[0m[32m [ 54%][0m
+2025-08-14T14:36:04.789978+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_init [32mPASSED[0m[32m                            [ 55%][0m
+2025-08-14T14:36:04.812557+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_compare_equal [32mPASSED[0m[32m                   [ 56%][0m
+2025-08-14T14:36:04.828867+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_compare_not_equal [32mPASSED[0m[32m               [ 57%][0m
+2025-08-14T14:36:04.844508+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_does_not_complain_if_api_token_exists [32mPASSED[0m[32m [ 58%][0m
+2025-08-14T14:36:04.860137+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_no_api_token_exists [32mPASSED[0m[32m   [ 60%][0m
+2025-08-14T14:36:04.875624+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_webapp_already_exists [32mPASSED[0m[32m [ 61%][0m
+2025-08-14T14:36:04.895825+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_does_not_raise_if_no_webapp [32mPASSED[0m[32m     [ 62%][0m
+2025-08-14T14:36:04.9115+00:00    | INFO     |   gh_src/tests/test_webapp.py::test_nuke_option_overrides_all_but_token_check [32mPASSED[0m[32m [ 63%][0m
+2025-08-14T14:36:04.927127+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_does_post_to_create_webapp [32mPASSED[0m[32m      [ 64%][0m
+2025-08-14T14:36:04.942742+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_does_patch_to_update_virtualenv_path_and_source_directory [32mPASSED[0m[32m [ 65%][0m
+2025-08-14T14:36:04.958369+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_post_to_create_does_not_20x [32mPASSED[0m[32m [ 67%][0m
+2025-08-14T14:36:04.973971+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_post_returns_a_200_with_status_error [32mPASSED[0m[32m [ 68%][0m
+2025-08-14T14:36:04.995902+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_patch_does_not_20x [32mPASSED[0m[32m    [ 69%][0m
+2025-08-14T14:36:05.011574+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_does_delete_first_for_nuke_call [32mPASSED[0m[32m [ 70%][0m
+2025-08-14T14:36:05.026759+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_ignores_404_from_delete_call_when_nuking [32mPASSED[0m[32m [ 71%][0m
+2025-08-14T14:36:05.055228+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_does_two_posts_to_static_files_endpoint [31mFAILED[0m[31m [ 72%][0m
+2025-08-14T14:36:05.070793+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_does_post_to_reload_url [32mPASSED[0m[31m         [ 74%][0m
+2025-08-14T14:36:05.09582+00:00   | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_post_does_not_20x_that_is_not_a_cname_error [32mPASSED[0m[31m [ 75%][0m
+2025-08-14T14:36:05.112112+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_does_not_raise_if_post_responds_with_a_cname_error [32mPASSED[0m[31m [ 76%][0m
+2025-08-14T14:36:05.127927+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_does_post_to_ssl_url [32mPASSED[0m[31m            [ 77%][0m
+2025-08-14T14:36:05.143371+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_post_to_ssl_does_not_20x [32mPASSED[0m[31m [ 78%][0m
+2025-08-14T14:36:05.158993+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_returns_json_from_server_having_parsed_expiry_with_z_for_utc_and_no_separators [32mPASSED[0m[31m [ 80%][0m
+2025-08-14T14:36:05.161151+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_returns_json_from_server_having_parsed_expiry_with_timezone_offset_and_separators [32mPASSED[0m[31m [ 81%][0m
+2025-08-14T14:36:05.177426+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_get_does_not_return_200 [32mPASSED[0m[31m [ 82%][0m
+2025-08-14T14:36:05.196124+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_delete_current_access_log [32mPASSED[0m[31m       [ 83%][0m
+2025-08-14T14:36:05.212401+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_delete_old_access_log [32mPASSED[0m[31m           [ 84%][0m
+2025-08-14T14:36:05.228043+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_log_delete_does_not_20x [32mPASSED[0m[31m [ 85%][0m
+2025-08-14T14:36:05.243653+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_get_list_of_logs [32mPASSED[0m[31m                [ 87%][0m
+2025-08-14T14:36:05.259295+00:00  | INFO     |   gh_src/tests/test_webapp.py::test_raises_if_get_does_not_20x [32mPASSED[0m[31m      [ 88%][0m
+2025-08-14T14:36:05.274466+00:00  | INFO     |   gh_src/tests/test_website.py::test_create_returns_json_with_created_website_info [32mPASSED[0m[31m [ 89%][0m
+2025-08-14T14:36:05.295828+00:00  | INFO     |   gh_src/tests/test_website.py::test_create_raises_when_domain_name_already_exists [32mPASSED[0m[31m [ 90%][0m
+2025-08-14T14:36:05.312099+00:00  | INFO     |   gh_src/tests/test_website.py::test_raises_with_api_error_message_for_any_other_error [32mPASSED[0m[31m [ 91%][0m
+2025-08-14T14:36:05.327744+00:00  | INFO     |   gh_src/tests/test_website.py::test_get_returns_json_with_info_for_given_domain [32mPASSED[0m[31m [ 92%][0m
+2025-08-14T14:36:05.343372+00:00  | INFO     |   gh_src/tests/test_website.py::test_list_returns_json_with_info_for_all_websites [32mPASSED[0m[31m [ 94%][0m
+2025-08-14T14:36:05.359+00:00     | INFO     |   gh_src/tests/test_website.py::test_reloads_website [32mPASSED[0m[31m                [ 95%][0m
+2025-08-14T14:36:05.374619+00:00  | INFO     |   gh_src/tests/test_website.py::test_deletes_website [32mPASSED[0m[31m                [ 96%][0m
+2025-08-14T14:36:05.390251+00:00  | INFO     |   gh_src/tests/test_website.py::test_sets_lets_encrypt_cert [32mPASSED[0m[31m         [ 97%][0m
+2025-08-14T14:36:05.405871+00:00  | INFO     |   gh_src/tests/test_website.py::test_returns_ssl_info [32mPASSED[0m[31m               [ 98%][0m
+2025-08-14T14:36:05.421496+00:00  | INFO     |   gh_src/tests/test_website.py::test_raises_if_ssl_info_does_not_return_200 [32mPASSED[0m[31m [100%][0m
+2025-08-14T14:36:05.43712+00:00   | INFO     |   
+2025-08-14T14:36:05.452748+00:00  | INFO     |   ================================== FAILURES ===================================
+2025-08-14T14:36:05.468354+00:00  | INFO     |   [31m[1m________________ test_does_two_posts_to_static_files_endpoint _________________[0m
+2025-08-14T14:36:05.483834+00:00  | INFO     |   
+2025-08-14T14:36:05.496061+00:00  | INFO     |   api_token = 'sekrit.token'
+2025-08-14T14:36:05.503937+00:00  | INFO     |   api_responses = <responses.RequestsMock object at 0x000001EB2E45BB00>
+2025-08-14T14:36:05.531136+00:00  | INFO     |   domain_url = 'https://www.pythonanywhere.com/api/v0/user/builder-admin/webapps/www.domain.com/'
+2025-08-14T14:36:05.546766+00:00  | INFO     |   webapp = <pythonanywhere_core.webapp.Webapp object at 0x000001EB2E459280>
+2025-08-14T14:36:05.573716+00:00  | INFO     |   
+2025-08-14T14:36:05.595591+00:00  | INFO     |       [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_does_two_posts_to_static_files_endpoint[39;49;00m(api_token, api_responses, domain_url, webapp):[90m[39;49;00m
+2025-08-14T14:36:05.612046+00:00  | INFO     |           static_files_url = [33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00mdomain_url[33m}[39;49;00m[33mstatic_files/[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+2025-08-14T14:36:05.62768+00:00   | INFO     |           api_responses.add(responses.POST, static_files_url, status=[94m201[39;49;00m)[90m[39;49;00m
+2025-08-14T14:36:05.643288+00:00  | INFO     |           api_responses.add(responses.POST, static_files_url, status=[94m201[39;49;00m)[90m[39;49;00m
+2025-08-14T14:36:05.658908+00:00  | INFO     |       [90m[39;49;00m
+2025-08-14T14:36:05.674546+00:00  | INFO     |           webapp.add_default_static_files_mappings([33m"[39;49;00m[33m/project/path[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+2025-08-14T14:36:05.695681+00:00  | INFO     |       [90m[39;49;00m
+2025-08-14T14:36:05.711985+00:00  | INFO     |           post1 = api_responses.calls[[94m0[39;49;00m][90m[39;49;00m
+2025-08-14T14:36:05.727606+00:00  | INFO     |           [94massert[39;49;00m post1.request.url == static_files_url[90m[39;49;00m
+2025-08-14T14:36:05.743304+00:00  | INFO     |           [94massert[39;49;00m post1.request.headers[[33m"[39;49;00m[33mcontent-type[39;49;00m[33m"[39;49;00m] == [33m"[39;49;00m[33mapplication/json[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+2025-08-14T14:36:05.772203+00:00  | INFO     |           [94massert[39;49;00m post1.request.headers[[33m"[39;49;00m[33mAuthorization[39;49;00m[33m"[39;49;00m] == [33mf[39;49;00m[33m"[39;49;00m[33mToken [39;49;00m[33m{[39;49;00mapi_token[33m}[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+2025-08-14T14:36:05.795343+00:00  | INFO     |   >       [94massert[39;49;00m json.loads(post1.request.body.decode([33m"[39;49;00m[33mutf8[39;49;00m[33m"[39;49;00m)) == {[90m[39;49;00m
+2025-08-14T14:36:05.812255+00:00  | INFO     |               [33m"[39;49;00m[33murl[39;49;00m[33m"[39;49;00m: [33m"[39;49;00m[33m/static/[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+2025-08-14T14:36:05.82789+00:00   | INFO     |               [33m"[39;49;00m[33mpath[39;49;00m[33m"[39;49;00m: [33m"[39;49;00m[33m/project/path/static[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+2025-08-14T14:36:05.843516+00:00  | INFO     |           }[90m[39;49;00m
+2025-08-14T14:36:05.870117+00:00  | INFO     |   [1m[31mE       AssertionError: assert {'url': '/static/', 'path': '\\project\\path\\static'} == {'url': '/static/', 'path': '/project/path/static'}[0m
+2025-08-14T14:36:05.874101+00:00  | INFO     |   [1m[31mE         [0m
+2025-08-14T14:36:05.896211+00:00  | INFO     |   [1m[31mE         Common items:[0m
+2025-08-14T14:36:05.912538+00:00  | INFO     |   [1m[31mE         [0m{[33m'[39;49;00m[33murl[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33m/static/[39;49;00m[33m'[39;49;00m}[90m[39;49;00m[0m
+2025-08-14T14:36:05.928166+00:00  | INFO     |   [1m[31mE         Differing items:[0m
+2025-08-14T14:36:05.943784+00:00  | INFO     |   [1m[31mE         [0m{[33m'[39;49;00m[33mpath[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33m\\[39;49;00m[33mproject[39;49;00m[33m\\[39;49;00m[33mpath[39;49;00m[33m\\[39;49;00m[33mstatic[39;49;00m[33m'[39;49;00m}[90m[39;49;00m != [0m{[33m'[39;49;00m[33mpath[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33m/project/path/static[39;49;00m[33m'[39;49;00m}[90m[39;49;00m[0m
+2025-08-14T14:36:05.95942+00:00   | INFO     |   [1m[31mE         [0m
+2025-08-14T14:36:05.97504+00:00   | INFO     |   [1m[31mE         Full diff:[0m
+2025-08-14T14:36:05.995799+00:00  | INFO     |   [1m[31mE         [0m[90m [39;49;00m {[90m[39;49;00m[0m
+2025-08-14T14:36:06.011149+00:00  | INFO     |   [1m[31mE         [91m-     'path': '/project/path/static',[39;49;00m[90m[39;49;00m[0m
+2025-08-14T14:36:06.029484+00:00  | INFO     |   [1m[31mE         ?              ^       ^    ^[90m[39;49;00m[0m
+2025-08-14T14:36:06.045117+00:00  | INFO     |   [1m[31mE         [92m+     'path': '\\project\\path\\static',[39;49;00m[90m[39;49;00m[0m
+2025-08-14T14:36:06.060739+00:00  | INFO     |   [1m[31mE         ?              ^^       ^^    ^^[90m[39;49;00m[0m
+2025-08-14T14:36:06.076357+00:00  | INFO     |   [1m[31mE         [90m [39;49;00m     'url': '/static/',[90m[39;49;00m[0m
+2025-08-14T14:36:06.095827+00:00  | INFO     |   [1m[31mE         [90m [39;49;00m }[90m[39;49;00m[0m
+2025-08-14T14:36:06.112134+00:00  | INFO     |   
+2025-08-14T14:36:06.127766+00:00  | INFO     |   [1m[31mgh_src\tests\test_webapp.py[0m:223: AssertionError
+2025-08-14T14:36:06.143404+00:00  | INFO     |   ---------------------------- Captured stdout call -----------------------------
+2025-08-14T14:36:06.159022+00:00  | INFO     |   
+2025-08-14T14:36:06.17645+00:00   | INFO     |   < Adding static files mappings for /static/ and /media/ >
+2025-08-14T14:36:06.196044+00:00  | INFO     |      \
+2025-08-14T14:36:06.212334+00:00  | INFO     |       ~<:>>>>>>>>>
+2025-08-14T14:36:06.227959+00:00  | INFO     |   [36m[1m=========================== short test summary info ===========================[0m
+2025-08-14T14:36:06.243619+00:00  | INFO     |   [31mFAILED[0m gh_src/tests/test_webapp.py::[1mtest_does_two_posts_to_static_files_endpoint[0m - AssertionError: assert {'url': '/static/', 'path': '\\project\\path\\static'} == {'url': '/static/', 'path': '/project/path/static'}
+2025-08-14T14:36:06.272311+00:00  | INFO     |   
+2025-08-14T14:36:06.274973+00:00  | INFO     |     Common items:
+2025-08-14T14:36:06.296095+00:00  | INFO     |     [0m{[33m'[39;49;00m[33murl[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33m/static/[39;49;00m[33m'[39;49;00m}[90m[39;49;00m
+2025-08-14T14:36:06.312399+00:00  | INFO     |     Differing items:
+2025-08-14T14:36:06.328036+00:00  | INFO     |     [0m{[33m'[39;49;00m[33mpath[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33m\\[39;49;00m[33mproject[39;49;00m[33m\\[39;49;00m[33mpath[39;49;00m[33m\\[39;49;00m[33mstatic[39;49;00m[33m'[39;49;00m}[90m[39;49;00m != [0m{[33m'[39;49;00m[33mpath[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33m/project/path/static[39;49;00m[33m'[39;49;00m}[90m[39;49;00m
+2025-08-14T14:36:06.343666+00:00  | INFO     |   
+2025-08-14T14:36:06.359387+00:00  | INFO     |     Full diff:
+2025-08-14T14:36:06.376432+00:00  | INFO     |     [0m[90m [39;49;00m {[90m[39;49;00m
+2025-08-14T14:36:06.379081+00:00  | INFO     |     [91m-     'path': '/project/path/static',[39;49;00m[90m[39;49;00m
+2025-08-14T14:36:06.395991+00:00  | INFO     |     ?              ^       ^    ^[90m[39;49;00m
+2025-08-14T14:36:06.411634+00:00  | INFO     |     [92m+     'path': '\\project\\path\\static',[39;49;00m[90m[39;49;00m
+2025-08-14T14:36:06.427314+00:00  | INFO     |     ?              ^^       ^^    ^^[90m[39;49;00m
+2025-08-14T14:36:06.442883+00:00  | INFO     |     [90m [39;49;00m     'url': '/static/',[90m[39;49;00m
+2025-08-14T14:36:06.458527+00:00  | INFO     |     [90m [39;49;00m }[90m[39;49;00m
+2025-08-14T14:36:06.47415+00:00   | ERROR    |   Command failed with exit code 1
+
+2025-08-14T14:36:06.47415+00:00   | INFO     |   Removing file C:\b\abs_prefect-yo97__ic
+2025-08-14T14:36:06.47415+00:00   | INFO     |   FAIL signal raised: FAIL('Command failed with exit code 1')
+2025-08-14T14:36:06.47415+00:00   | INFO     |   [31m=================== [31m[1m1 failed[0m, [32m83 passed[0m, [33m1 skipped[0m[31m in 0.69s[0m[31m ===================[0m
+2025-08-14T14:36:06.578732+00:00  | INFO     |   Task 'build': Finished task run for task with final state: 'Failed'
+2025-08-14T14:36:06.696786+00:00  | INFO     |   Task 'skipped': Starting task run...
+2025-08-14T14:36:06.79601+00:00   | INFO     |   Task 'skipped': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:06.895928+00:00  | INFO     |   Task 'docker_hash_info': Starting task run...
+2025-08-14T14:36:06.996576+00:00  | INFO     |   Task 'docker_hash_info': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:07.112309+00:00  | INFO     |   Task 'case(False)': Starting task run...
+2025-08-14T14:36:07.195252+00:00  | INFO     |   Task 'case(False)': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:07.284921+00:00  | INFO     |   Task 'case(True)': Starting task run...
+2025-08-14T14:36:07.376885+00:00  | INFO     |   Task 'case(True)': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:07.459423+00:00  | INFO     |   Task 'case(False)': Starting task run...
+2025-08-14T14:36:07.559566+00:00  | INFO     |   Task 'case(False)': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:07.659803+00:00  | INFO     |   Task 'case(True)': Starting task run...
+2025-08-14T14:36:07.743561+00:00  | INFO     |   Task 'case(True)': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:07.854188+00:00  | INFO     |   Task 'package_content_sign': Starting task run...
+2025-08-14T14:36:07.966868+00:00  | INFO     |   Task 'package_content_sign': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:08.061701+00:00  | INFO     |   Task 'transmute_package': Starting task run...
+2025-08-14T14:36:08.13644+00:00   | INFO     |   Task 'transmute_package': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:08.246875+00:00  | INFO     |   Task 'skipped': Starting task run...
+2025-08-14T14:36:08.337677+00:00  | INFO     |   Task 'skipped': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:08.429732+00:00  | INFO     |   Task 'staging_upload': Starting task run...
+2025-08-14T14:36:08.512206+00:00  | INFO     |   Task 'staging_upload': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:08.600963+00:00  | INFO     |   Task 'package_upload': Starting task run...
+2025-08-14T14:36:08.69592+00:00   | INFO     |   Task 'package_upload': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:08.796685+00:00  | INFO     |   Task 'upload': Starting task run...
+2025-08-14T14:36:08.893116+00:00  | INFO     |   Task 'upload': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:08.983855+00:00  | INFO     |   Task 'anaconda_version_info': Starting task run...
+2025-08-14T14:36:09.083218+00:00  | INFO     |   Task 'anaconda_version_info': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:09.183008+00:00  | INFO     |   Task 'success': Starting task run...
+2025-08-14T14:36:09.285776+00:00  | INFO     |   Task 'success': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:09.378718+00:00  | INFO     |   Task 'status': Starting task run...
+2025-08-14T14:36:09.468537+00:00  | INFO     |   Task 'status': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:09.583074+00:00  | INFO     |   Task 'List': Starting task run...
+2025-08-14T14:36:09.682936+00:00  | INFO     |   Task 'List': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:36:09.782889+00:00  | INFO     |   Task 'List': Starting task run...
+2025-08-14T14:36:09.905674+00:00  | INFO     |   Task 'List': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:36:10.017815+00:00  | INFO     |   Task 'pbp_upload': Starting task run...
+2025-08-14T14:36:10.122182+00:00  | INFO     |   Task 'pbp_upload': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:36:10.253138+00:00  | INFO     |   Task 'pbp_upload': Starting task run...
+2025-08-14T14:36:10.337459+00:00  | INFO     |   Task 'pbp_upload': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:36:10.43781+00:00   | INFO     |   Task 'Merge': Starting task run...
+2025-08-14T14:36:10.521745+00:00  | INFO     |   Task 'Merge': Finished task run for task with final state: 'TriggerFailed'
+2025-08-14T14:36:10.621829+00:00  | INFO     |   Task 'remove_temp_directory': Starting task run...
+2025-08-14T14:36:10.723459+00:00  | INFO     |   Task 'remove_temp_directory': Finished task run for task with final state: 'Skipped'
+2025-08-14T14:36:10.821836+00:00  | INFO     |   Github Status Report
+2025-08-14T14:36:10.821836+00:00  | INFO     |   Check if the build is new
+2025-08-14T14:36:10.821836+00:00  | INFO     |   Flow run FAILED: some reference tasks failed.
+2025-08-14T14:36:10.821836+00:00  | INFO     |   Get SHA from git ref
+2025-08-14T14:36:11.021608+00:00  | INFO     |   Updating github status check
+2025-08-14T14:36:11.021608+00:00  | INFO     |   Setting status on pythonanywhere-core-feedstock 218c389be104410dc1b5fe0f486a96d20a3d2e2c to failure
+2025-08-14T14:36:11.037224+00:00  | INFO     |   Slack id is 
+2025-08-14T14:36:11.337484+00:00  | INFO     |   Request response code for github_status returned 201

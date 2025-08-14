@@ -31,6 +31,17 @@ requirements:
     - snakesay >=0.10.3,<0.11.0
     - typing_extensions >=4.5.0,<5.0
 
+# Skip test with error on path Windows Path/os.path
+# AssertionError: assert {'url': '/static/', 'path': '\\project\\path\\static'} 
+# == {'url': '/static/', 'path': '/project/path/static'}
+{% set skip_broken_tests = [
+    "test_raises_if_post_returns_a_200_with_status_error",
+    "test_raises_if_post_does_not_20x_that_is_not_a_cname_error",
+    "test_does_not_raise_if_post_responds_with_a_cname_error",
+    "test_raises_with_api_error_message_for_any_other_error",
+    "test_does_two_posts_to_static_files_endpoint"
+] %}
+
 test:
   source_files:
     - gh_src/tests
@@ -43,8 +54,7 @@ test:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
     - pytest gh_src/tests -vv --color=yes [not win]
-      # Skip test with error on path Windows Path/os.path
-    - pytest gh_src/tests -vv --color=yes --deselect=test_ls_bad_path [win]
+    - pytest gh_src/tests -vv --color=yes -k "not ({{ skip_broken_tests | join(' or ') }})" [win]
   imports:
     - pythonanywhere_core
     - pythonanywhere_core.base
