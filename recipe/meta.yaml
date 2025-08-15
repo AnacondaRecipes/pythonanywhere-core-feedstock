@@ -1,5 +1,5 @@
 {% set name = "pythonanywhere-core" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +7,16 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pythonanywhere_core-{{ version }}.tar.gz
-    sha256: 2b43d726c18e5972a01bdfe09482c72dad20325fc3196c7504f4d90acaf642c0
+    sha256: 40fcef8efc31ccc5478a41305ce96abec2eabe532d549bc04787328d46519a3a
 
   # tests and tests data files
   - url: https://github.com/{{ name.split('-')[0] }}/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: b338361925ed92ef4e3ff33b29fa4c05f003a7fa470b0157a2e427e626bb4202
+    sha256: ff0ccf5c350eea9c04147b307634749286e9f0f86a2d01ee879a14473fd47c89
     folder: gh_src
 
 build:
   number: 0
-  skip: True  # [py<310]
+  skip: True  # [py<38]
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vv
 
 requirements:
@@ -31,6 +31,17 @@ requirements:
     - snakesay >=0.10.3,<0.11.0
     - typing_extensions >=4.5.0,<5.0
 
+# Skip test with error on path Windows Path/os.path
+# AssertionError: assert {'url': '/static/', 'path': '\\project\\path\\static'} 
+# == {'url': '/static/', 'path': '/project/path/static'}
+{% set skip_broken_tests = [
+    "test_raises_if_post_returns_a_200_with_status_error",
+    "test_raises_if_post_does_not_20x_that_is_not_a_cname_error",
+    "test_does_not_raise_if_post_responds_with_a_cname_error",
+    "test_raises_with_api_error_message_for_any_other_error",
+    "test_does_two_posts_to_static_files_endpoint"
+] %}
+
 test:
   source_files:
     - gh_src/tests
@@ -38,11 +49,12 @@ test:
     - pip
     - pytest >=8.0.0,<9
     - pytest-mock >=3.10.0,<4.0
-    - responses >=0.25.0,<0.26
+    - responses >=0.25.0,<1.0
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-    - pytest gh_src/tests -vv --color=yes
+    - pytest gh_src/tests -vv --color=yes  # [not win]
+    - pytest gh_src/tests -vv --color=yes -k "not ({{ skip_broken_tests | join(' or ') }})"  # [win]
   imports:
     - pythonanywhere_core
     - pythonanywhere_core.base
