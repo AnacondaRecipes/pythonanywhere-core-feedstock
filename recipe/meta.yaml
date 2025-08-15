@@ -75,6 +75,3 @@ about:
   summary: API wrapper for programmatic management of PythonAnywhere services
   description: It's an extraction and improvement of core code behind PythonAnywhere cli tool
 
-extra:
-  skip-lints:
-    - patch_unnecessary
