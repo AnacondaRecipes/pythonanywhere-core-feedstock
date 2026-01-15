@@ -1,17 +1,16 @@
 {% set name = "pythonanywhere-core" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pythonanywhere_core-{{ version }}.tar.gz
-    sha256: 2b43d726c18e5972a01bdfe09482c72dad20325fc3196c7504f4d90acaf642c0
-
+  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
+    sha256: d8c55423023b359efb2f673452cfd085dccf179fad7f3c02812919baa6c83a49
   # tests and tests data files
   - url: https://github.com/{{ name.split('-')[0] }}/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: b338361925ed92ef4e3ff33b29fa4c05f003a7fa470b0157a2e427e626bb4202
+    sha256: a8db464f9b02450cf2f71f1f4dcd1af5bcbcca53b68959d550e7982e850d627b
     folder: gh_src
 
 build:
@@ -21,15 +20,19 @@ build:
 
 requirements:
   host:
+    - pip
     - python
     - poetry-core >=1.0.0
-    - pip
   run:
     - python
     - python-dateutil >=2.8.2,<3.0
     - requests >=2.30.0,<3.0
     - snakesay >=0.10.3,<0.11.0
     - typing_extensions >=4.5.0,<5.0
+
+{% set deselect_tests = "" %}
+# OSError: [WinError 1314] A required privilege is not held by the client
+{% set deselect_tests = deselect_tests + " --deselect=gh_src/tests/test_webapp.py::test_nuke_option_overrides_all_but_token_check" %}  # [win]
 
 test:
   source_files:
@@ -42,7 +45,7 @@ test:
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-    - pytest gh_src/tests -vv --color=yes
+    - pytest gh_src/tests -vv --color=yes {{ deselect_tests }}
   imports:
     - pythonanywhere_core
     - pythonanywhere_core.base
@@ -55,11 +58,11 @@ test:
 
 about:
   home: https://github.com/pythonanywhere/pythonanywhere-core
-  dev_url: https://github.com/pythonanywhere/pythonanywhere-core
-  doc_url: https://github.com/pythonanywhere/pythonanywhere-core/tree/master/docs
   license: MIT
   license_file: LICENSE
   license_family: MIT
   summary: API wrapper for programmatic management of PythonAnywhere services
   description: It's an extraction and improvement of core code behind PythonAnywhere cli tool
+  dev_url: https://github.com/pythonanywhere/pythonanywhere-core
+  doc_url: https://github.com/pythonanywhere/pythonanywhere-core/tree/master/docs
 
