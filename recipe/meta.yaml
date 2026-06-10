@@ -39,7 +39,7 @@ test:
     - gh_src/tests
   requires:
     - pip
-    - pytest >=8.0.0,<9
+    - pytest >=9.0.0,<10
     - pytest-mock >=3.10.0,<4.0
     - responses >=0.25.0,<0.26
   commands:
