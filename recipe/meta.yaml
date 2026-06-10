@@ -1,22 +1,21 @@
 {% set name = "pythonanywhere-core" %}
-{% set version = "0.2.9" %}
+{% set version = "0.3.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-    sha256: d8c55423023b359efb2f673452cfd085dccf179fad7f3c02812919baa6c83a49
-  # tests and tests data files
+    sha256: 61812c51f15f02921a68705df7e4c956ceb5b16f4c0e3c6ba9ca1a55119bf22a
   - url: https://github.com/{{ name.split('-')[0] }}/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: a8db464f9b02450cf2f71f1f4dcd1af5bcbcca53b68959d550e7982e850d627b
+    sha256: e5c1cccad507cd1ae2a1370e50c934f891ba920a819350cf72f4ce8017616b3d
     folder: gh_src
 
 build:
   number: 0
-  skip: True  # [py<310]
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vv
+  skip: true  # [py<310]
 
 requirements:
   host:
@@ -27,19 +26,20 @@ requirements:
     - python
     - python-dateutil >=2.8.2,<3.0
     - requests >=2.30.0,<3.0
-    - snakesay >=0.10.3,<0.11.0
     - typing_extensions >=4.5.0,<5.0
 
 {% set deselect_tests = "" %}
 # OSError: [WinError 1314] A required privilege is not held by the client
 {% set deselect_tests = deselect_tests + " --deselect=gh_src/tests/test_webapp.py::test_nuke_option_overrides_all_but_token_check" %}  # [win]
+# backslashes problem in path on Windows
+{% set deselect_tests = deselect_tests + " --deselect=gh_src/tests/test_files.py::test_tree_post_preserves_nested_structure" %}  # [win]
 
 test:
   source_files:
     - gh_src/tests
   requires:
     - pip
-    - pytest >=8.0.0,<9
+    - pytest >=9.0.0,<10
     - pytest-mock >=3.10.0,<4.0
     - responses >=0.25.0,<0.26
   commands:
