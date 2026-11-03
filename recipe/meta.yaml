@@ -33,6 +33,8 @@ requirements:
 {% set deselect_tests = deselect_tests + " --deselect=gh_src/tests/test_webapp.py::test_nuke_option_overrides_all_but_token_check" %}  # [win]
 # backslashes problem in path on Windows
 {% set deselect_tests = deselect_tests + " --deselect=gh_src/tests/test_files.py::test_tree_post_preserves_nested_structure" %}  # [win]
+# Same backslashes problem: asserts Path("/project")/"static" renders as /project/static
+{% set deselect_tests = deselect_tests + " --deselect=gh_src/tests/test_webapp.py::test_default_static_mappings_stop_after_first_api_failure" %}  # [win]
 
 test:
   source_files:
