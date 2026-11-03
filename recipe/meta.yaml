@@ -1,5 +1,5 @@
 {% set name = "pythonanywhere-core" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name }}
@@ -7,9 +7,9 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-    sha256: 61812c51f15f02921a68705df7e4c956ceb5b16f4c0e3c6ba9ca1a55119bf22a
+    sha256: 9a744d9ac15275276d4ec7079be5ef87b81b0256b5236215b078039dce6f13e8
   - url: https://github.com/{{ name.split('-')[0] }}/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: e5c1cccad507cd1ae2a1370e50c934f891ba920a819350cf72f4ce8017616b3d
+    sha256: 7fbae2eb4e86d8b2a65ae463d98f19c8c51ab1de1a32828274f61fc33bc226bf
     folder: gh_src
 
 build:
