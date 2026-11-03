@@ -43,7 +43,9 @@ test:
     - pip
     - pytest >=9.0.0,<10
     - pytest-mock >=3.10.0,<4.0
-    - responses >=0.25.0,<0.26
+    - responses >=0.25.0,<0.26  # [not (win and arm64)]
+    # win-arm64 has no 0.25.x builds, only 0.26.x
+    - responses >=0.26.2,<0.27  # [win and arm64]
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
